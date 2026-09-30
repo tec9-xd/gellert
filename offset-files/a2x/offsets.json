@@ -1,0 +1,124 @@
+{
+  "libclient.so": [
+    {
+      "name": "dwEntityList",
+      "value": 74174976
+    },
+    {
+      "name": "dwGameEntitySystem",
+      "value": 79228816
+    },
+    {
+      "name": "dwGameEntitySystem_highestEntityIndex",
+      "value": 8480
+    },
+    {
+      "name": "dwGlobalVars",
+      "value": 73932216
+    },
+    {
+      "name": "dwGlowManager",
+      "value": 76757464
+    },
+    {
+      "name": "dwLocalPlayerController",
+      "value": 76555928
+    },
+    {
+      "name": "dwLocalPlayerPawn",
+      "value": 76785496
+    },
+    {
+      "name": "dwPlantedC4",
+      "value": 74261287
+    },
+    {
+      "name": "dwPrediction",
+      "value": 76785168
+    },
+    {
+      "name": "dwSensitivity",
+      "value": 76777592
+    },
+    {
+      "name": "dwSensitivity_sensitivity",
+      "value": 88
+    },
+    {
+      "name": "dwViewMatrix",
+      "value": 76815744
+    },
+    {
+      "name": "dwViewRender",
+      "value": 76816016
+    }
+  ],
+  "libengine2.so": [
+    {
+      "name": "dwBuildNumber",
+      "value": 13170152
+    },
+    {
+      "name": "dwNetworkGameClient_clientTickCount",
+      "value": 936
+    },
+    {
+      "name": "dwNetworkGameClient_deltaTick",
+      "value": 940
+    },
+    {
+      "name": "dwNetworkGameClient_isBackgroundMap",
+      "value": 648
+    },
+    {
+      "name": "dwNetworkGameClient_localPlayer",
+      "value": 640
+    },
+    {
+      "name": "dwNetworkGameClient_maxClients",
+      "value": 576
+    },
+    {
+      "name": "dwNetworkGameClient_serverTickCount",
+      "value": 604
+    },
+    {
+      "name": "dwNetworkGameClient_signOnState",
+      "value": 644
+    },
+    {
+      "name": "dwWindowHeight",
+      "value": 10488068
+    },
+    {
+      "name": "dwWindowWidth",
+      "value": 10488064
+    }
+  ],
+  "libinputsystem.so": [
+    {
+      "name": "dwInputSystem",
+      "value": 523424
+    }
+  ],
+  "libmatchmaking.so": [
+    {
+      "name": "dwGameTypes",
+      "value": 3789536
+    },
+    {
+      "name": "dwGameTypes_mapName",
+      "value": 3789824
+    }
+  ],
+  "libpanorama.so": [
+    {
+      "name": "HUD_CONTEXT",
+      "value": 7102464
+    },
+    {
+      "name": "MENU_CONTEXT",
+      "value": 7102432
+    }
+  ]
+}
