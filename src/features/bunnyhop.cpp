@@ -102,7 +102,7 @@ static void hop() {
     g_in_air = !g_grounded;
     g_space = space_held();
 
-    if (!config.misc.bhop || !g_space) {
+    if (!config.movement.bhop || !g_space) {
         g_was_grounded = g_grounded;
         return;
     }
@@ -127,7 +127,7 @@ static void hop() {
 
 struct BunnyhopFeature final : IFeature {
     const char* name() const override { return "Bunnyhop"; }
-    const char* tab()  const override { return "Misc"; }
+    const char* tab()  const override { return "Movement"; }
 
     void on_create_move_pre() override { hop(); }
 
@@ -142,7 +142,7 @@ struct BunnyhopFeature final : IFeature {
     }
 
     void on_menu() override {
-        ImGui::Checkbox("Bunnyhop", &config.misc.bhop);
+        ImGui::Checkbox("Bunnyhop", &config.movement.bhop);
         ImGui::Text("space: %s   grounded: %s   air: %s",
                     g_space ? "YES" : "no",
                     g_grounded ? "YES" : "no",

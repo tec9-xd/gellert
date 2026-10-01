@@ -65,7 +65,7 @@ struct Config {
 
     struct {
         bool bhop = false;
-    } misc;
+    } movement;
 };
 
 inline Config config;

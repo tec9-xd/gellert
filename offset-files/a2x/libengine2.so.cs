@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-09-29 10:05:13.449167368 UTC
+// 2026-10-01 20:14:35.847820660 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: libengine2.so

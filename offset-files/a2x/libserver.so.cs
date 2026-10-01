@@ -1,10 +1,10 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-09-29 10:05:13.449167368 UTC
+// 2026-10-01 20:14:35.847820660 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: libserver.so
     // Classes count: 969
-    // Enums count: 245
+    // Enums count: 244
     public static class LibserverSo {
         // Alignment: 4
         // Members count: 4
@@ -436,19 +436,6 @@ namespace CS2Dumper.Schemas {
             DURING_OUTRO = 0x4
         }
         // Alignment: 4
-        // Members count: 9
-        public enum EInitSystemResult : uint {
-            k_EInitSystemResult_Invalid = 0x0,
-            k_EInitSystemResult_Success = 0x1,
-            k_EInitSystemResult_None = 0x2,
-            k_EInitSystemResult_NotFound = 0x3,
-            k_EInitSystemResult_Existing = 0x4,
-            k_EInitSystemResult_FailedOpen = 0x5,
-            k_EInitSystemResult_Mismatch = 0x6,
-            k_EInitSystemResult_FailedInit = 0x7,
-            k_EInitSystemResult_Max = 0x8
-        }
-        // Alignment: 4
         // Members count: 5
         public enum soundcommands_t : uint {
             SOUNDCTRL_CHANGE_VOLUME = 0x0,
@@ -650,7 +637,7 @@ namespace CS2Dumper.Schemas {
             k_EQuestType_RecurringMission = 0x2
         }
         // Alignment: 4
-        // Members count: 109
+        // Members count: 105
         public enum ECsgoGCMsg : uint {
             k_EMsgGCCStrike15_v2_Base = 0x238C,
             k_EMsgGCCStrike15_v2_MatchmakingStart = 0x238D,
@@ -739,13 +726,9 @@ namespace CS2Dumper.Schemas {
             k_EMsgGCCStrike15_v2_ClientPerfReport = 0x23F2,
             k_EMsgGCCStrike15_v2_GetEventFavorites_Response = 0x23F3,
             k_EMsgGCCStrike15_v2_ClientRequestSouvenir = 0x23F4,
-            k_EMsgGCCStrike15_v2_GC2ClientRefuseSecureMode = 0x23F6,
-            k_EMsgGCCStrike15_v2_GC2ClientRequestValidation = 0x23F7,
             k_EMsgGCCStrike15_v2_ClientRedeemMissionReward = 0x23F9,
             k_EMsgGCCStrike15_ClientDeepStats = 0x23FA,
             k_EMsgGCCStrike15_StartAgreementSessionInGame = 0x23FB,
-            k_EMsgGCCStrike15_v2_GC2ClientInitSystem = 0x23FC,
-            k_EMsgGCCStrike15_v2_GC2ClientInitSystem_Response = 0x23FD,
             k_EMsgGCCStrike15_v2_PrivateQueues = 0x23FE,
             k_EMsgGCCStrike15_v2_MatchListTournamentOperatorMgmt = 0x23FF,
             k_EMsgGCCStrike15_v2_BetaEnrollment = 0x2401,
@@ -9273,7 +9256,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_bPvsModifyEntity = 0x1B8; // bool
         }
         // Parent: CBasePlayerWeapon
-        // Fields count: 58
+        // Fields count: 59
         public static class CCSWeaponBase {
             public const nint m_bRemoveable = 0x11D0; // bool
             public const nint m_bPlayerAmmoStockOnPickup = 0x11D1; // bool
@@ -9300,34 +9283,35 @@ namespace CS2Dumper.Schemas {
             public const nint m_flPostponeFireReadyFrac = 0x127C; // float32
             public const nint m_bInReload = 0x1280; // bool
             public const nint m_nDeployTick = 0x1284; // GameTick_t
-            public const nint m_flDroppedAtTime = 0x1288; // GameTime_t
-            public const nint m_bIsHauledBack = 0x1290; // bool
-            public const nint m_bSilencerOn = 0x1291; // bool
-            public const nint m_flTimeSilencerSwitchComplete = 0x1294; // GameTime_t
-            public const nint m_bStealthy = 0x1298; // bool
-            public const nint m_bInSilentReloadSection = 0x1299; // bool
-            public const nint m_bSilentReloadStatCounted = 0x129A; // bool
-            public const nint m_bSilentReloadStatPending = 0x129B; // bool
-            public const nint m_flStealthHoldStartTime = 0x129C; // GameTime_t
-            public const nint m_bReloadHeldSinceStart = 0x12A0; // bool
-            public const nint m_flWeaponActionPlaybackRate = 0x12A4; // float32
-            public const nint m_iOriginalTeamNumber = 0x12A8; // int32
-            public const nint m_iMostRecentTeamNumber = 0x12AC; // int32
-            public const nint m_bDroppedNearBuyZone = 0x12B0; // bool
-            public const nint m_flNextAttackRenderTimeOffset = 0x12B4; // float32
-            public const nint m_bCanBePickedUp = 0x12C8; // bool
-            public const nint m_bUseCanOverrideNextOwnerTouchTime = 0x12C9; // bool
-            public const nint m_nextOwnerTouchTime = 0x12CC; // GameTime_t
-            public const nint m_nextPrevOwnerTouchTime = 0x12D0; // GameTime_t
-            public const nint m_nextPrevOwnerUseTime = 0x12D8; // GameTime_t
-            public const nint m_hPrevOwner = 0x12DC; // CHandle<CCSPlayerPawn>
-            public const nint m_nDropTick = 0x12E0; // GameTick_t
-            public const nint m_bWasActiveWeaponWhenDropped = 0x12E4; // bool
-            public const nint m_donated = 0x1304; // bool
-            public const nint m_fLastShotTime = 0x1308; // GameTime_t
-            public const nint m_bWasOwnedByCT = 0x130C; // bool
-            public const nint m_bWasOwnedByTerrorist = 0x130D; // bool
-            public const nint m_numRemoveUnownedWeaponThink = 0x1310; // int32
+            public const nint m_flAttackHoldStartTime = 0x1288; // GameTime_t
+            public const nint m_flDroppedAtTime = 0x128C; // GameTime_t
+            public const nint m_bIsHauledBack = 0x1294; // bool
+            public const nint m_bSilencerOn = 0x1295; // bool
+            public const nint m_flTimeSilencerSwitchComplete = 0x1298; // GameTime_t
+            public const nint m_bStealthy = 0x129C; // bool
+            public const nint m_bInSilentReloadSection = 0x129D; // bool
+            public const nint m_bSilentReloadStatCounted = 0x129E; // bool
+            public const nint m_bSilentReloadStatPending = 0x129F; // bool
+            public const nint m_flStealthHoldStartTime = 0x12A0; // GameTime_t
+            public const nint m_bReloadHeldSinceStart = 0x12A4; // bool
+            public const nint m_flWeaponActionPlaybackRate = 0x12A8; // float32
+            public const nint m_iOriginalTeamNumber = 0x12AC; // int32
+            public const nint m_iMostRecentTeamNumber = 0x12B0; // int32
+            public const nint m_bDroppedNearBuyZone = 0x12B4; // bool
+            public const nint m_flNextAttackRenderTimeOffset = 0x12B8; // float32
+            public const nint m_bCanBePickedUp = 0x12D0; // bool
+            public const nint m_bUseCanOverrideNextOwnerTouchTime = 0x12D1; // bool
+            public const nint m_nextOwnerTouchTime = 0x12D4; // GameTime_t
+            public const nint m_nextPrevOwnerTouchTime = 0x12D8; // GameTime_t
+            public const nint m_nextPrevOwnerUseTime = 0x12E0; // GameTime_t
+            public const nint m_hPrevOwner = 0x12E4; // CHandle<CCSPlayerPawn>
+            public const nint m_nDropTick = 0x12E8; // GameTick_t
+            public const nint m_bWasActiveWeaponWhenDropped = 0x12EC; // bool
+            public const nint m_donated = 0x130C; // bool
+            public const nint m_fLastShotTime = 0x1310; // GameTime_t
+            public const nint m_bWasOwnedByCT = 0x1314; // bool
+            public const nint m_bWasOwnedByTerrorist = 0x1315; // bool
+            public const nint m_numRemoveUnownedWeaponThink = 0x1318; // int32
             public const nint m_IronSightController = 0x1370; // CIronSightController
             public const nint m_iIronSightMode = 0x1388; // int32
             public const nint m_flLastLOSTraceFailureTime = 0x138C; // GameTime_t

@@ -10,7 +10,7 @@ sudo ./inject.sh
 
 1. create src/features/myhack.cpp
 2. copy the AimbotFeature skeleton
-3. set tab() to "Aimbot" / "ESP" / "Visuals" / "Misc" (or a new string — a new tab appears by itself)
+3. set tab() to "Aimbot" / "ESP" / "Movement" / "Visuals" / "Sounds"
 4. implement on_menu / on_draw / on_create_move
 5. REGISTER_FEATURE(MyHackFeature);
 6. rebuild + reinject

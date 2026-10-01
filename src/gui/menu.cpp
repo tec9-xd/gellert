@@ -2,8 +2,6 @@
 #include "config.hpp"
 #include "../features/feature.hpp"
 #include "dearimgui.hpp"
-#include <cstring>
-#include <vector>
 
 void get_input(SDL_Event* event) {
     ImGui::KeybindEvent(event, &config.aimbot.key.waiting, &config.aimbot.key.button);
@@ -24,7 +22,7 @@ static void draw_tab_btn(ImGuiStyle* style, const char* name, int* tab, int inde
         style->Colors[ImGuiCol_Button] = ImVec4(orig_box_color.x + 0.15f, orig_box_color.y + 0.15f, orig_box_color.z + 0.15f, 1.f);
     else
         style->Colors[ImGuiCol_Button] = ImVec4(0.15f, 0.15f, 0.15f, 1.f);
-    if (ImGui::Button(name, ImVec2(80, 30)))
+    if (ImGui::Button(name, ImVec2(100, 30)))
         *tab = index;
     style->Colors[ImGuiCol_Button] = ImVec4(0.15f, 0.15f, 0.15f, 1.f);
 }
@@ -39,20 +37,14 @@ void draw_menu() {
 
     ImGuiStyle* style = &ImGui::GetStyle();
 
-    std::vector<const char*> tabs;
-    for (auto* f : FeatureRegistry::get().all()) {
-        bool found = false;
-        for (auto* t : tabs)
-            if (!strcmp(t, f->tab())) { found = true; break; }
-        if (!found) tabs.push_back(f->tab());
-    }
-    if (tabs.empty()) tabs.push_back("Empty");
+    static const char* tabs[] = { "Aimbot", "ESP", "Movement", "Visuals", "Sounds" };
+    constexpr int tab_count = (int)(sizeof(tabs) / sizeof(tabs[0]));
 
     static int tab = 0;
-    if (tab >= (int)tabs.size()) tab = 0;
+    if (tab >= tab_count) tab = 0;
 
     ImGui::BeginGroup();
-    for (int i = 0; i < (int)tabs.size(); ++i)
+    for (int i = 0; i < tab_count; ++i)
         draw_tab_btn(style, tabs[i], &tab, i);
 
     ImGui::SetCursorPosY(ImGui::GetWindowHeight() - 27);
@@ -64,7 +56,7 @@ void draw_menu() {
     ImGui::SameLine();
 
     ImGui::BeginChild("##TabBody");
-    if (tab >= 0 && tab < (int)tabs.size())
+    if (tab >= 0 && tab < tab_count)
         FeatureRegistry::get().menu_for_tab(tabs[tab]);
 
     ImGui::Separator();

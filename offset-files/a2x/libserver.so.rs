@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-09-29 10:05:13.449167368 UTC
+// 2026-10-01 20:14:35.847820660 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -7,7 +7,7 @@ pub mod cs2_dumper {
     pub mod schemas {
         // Module: libserver.so
         // Classes count: 969
-        // Enums count: 245
+        // Enums count: 244
         pub mod libserver_so {
             // Alignment: 4
             // Members count: 4
@@ -476,20 +476,6 @@ pub mod cs2_dumper {
                 DURING_OUTRO = 0x4
             }
             // Alignment: 4
-            // Members count: 9
-            #[repr(u32)]
-            pub enum EInitSystemResult {
-                k_EInitSystemResult_Invalid = 0x0,
-                k_EInitSystemResult_Success = 0x1,
-                k_EInitSystemResult_None = 0x2,
-                k_EInitSystemResult_NotFound = 0x3,
-                k_EInitSystemResult_Existing = 0x4,
-                k_EInitSystemResult_FailedOpen = 0x5,
-                k_EInitSystemResult_Mismatch = 0x6,
-                k_EInitSystemResult_FailedInit = 0x7,
-                k_EInitSystemResult_Max = 0x8
-            }
-            // Alignment: 4
             // Members count: 5
             #[repr(u32)]
             pub enum soundcommands_t {
@@ -706,7 +692,7 @@ pub mod cs2_dumper {
                 k_EQuestType_RecurringMission = 0x2
             }
             // Alignment: 4
-            // Members count: 109
+            // Members count: 105
             #[repr(u32)]
             pub enum ECsgoGCMsg {
                 k_EMsgGCCStrike15_v2_Base = 0x238C,
@@ -796,13 +782,9 @@ pub mod cs2_dumper {
                 k_EMsgGCCStrike15_v2_ClientPerfReport = 0x23F2,
                 k_EMsgGCCStrike15_v2_GetEventFavorites_Response = 0x23F3,
                 k_EMsgGCCStrike15_v2_ClientRequestSouvenir = 0x23F4,
-                k_EMsgGCCStrike15_v2_GC2ClientRefuseSecureMode = 0x23F6,
-                k_EMsgGCCStrike15_v2_GC2ClientRequestValidation = 0x23F7,
                 k_EMsgGCCStrike15_v2_ClientRedeemMissionReward = 0x23F9,
                 k_EMsgGCCStrike15_ClientDeepStats = 0x23FA,
                 k_EMsgGCCStrike15_StartAgreementSessionInGame = 0x23FB,
-                k_EMsgGCCStrike15_v2_GC2ClientInitSystem = 0x23FC,
-                k_EMsgGCCStrike15_v2_GC2ClientInitSystem_Response = 0x23FD,
                 k_EMsgGCCStrike15_v2_PrivateQueues = 0x23FE,
                 k_EMsgGCCStrike15_v2_MatchListTournamentOperatorMgmt = 0x23FF,
                 k_EMsgGCCStrike15_v2_BetaEnrollment = 0x2401,
@@ -9487,7 +9469,7 @@ pub mod cs2_dumper {
                 pub const m_bPvsModifyEntity: usize = 0x1B8; // bool
             }
             // Parent: CBasePlayerWeapon
-            // Fields count: 58
+            // Fields count: 59
             pub mod CCSWeaponBase {
                 pub const m_bRemoveable: usize = 0x11D0; // bool
                 pub const m_bPlayerAmmoStockOnPickup: usize = 0x11D1; // bool
@@ -9514,34 +9496,35 @@ pub mod cs2_dumper {
                 pub const m_flPostponeFireReadyFrac: usize = 0x127C; // float32
                 pub const m_bInReload: usize = 0x1280; // bool
                 pub const m_nDeployTick: usize = 0x1284; // GameTick_t
-                pub const m_flDroppedAtTime: usize = 0x1288; // GameTime_t
-                pub const m_bIsHauledBack: usize = 0x1290; // bool
-                pub const m_bSilencerOn: usize = 0x1291; // bool
-                pub const m_flTimeSilencerSwitchComplete: usize = 0x1294; // GameTime_t
-                pub const m_bStealthy: usize = 0x1298; // bool
-                pub const m_bInSilentReloadSection: usize = 0x1299; // bool
-                pub const m_bSilentReloadStatCounted: usize = 0x129A; // bool
-                pub const m_bSilentReloadStatPending: usize = 0x129B; // bool
-                pub const m_flStealthHoldStartTime: usize = 0x129C; // GameTime_t
-                pub const m_bReloadHeldSinceStart: usize = 0x12A0; // bool
-                pub const m_flWeaponActionPlaybackRate: usize = 0x12A4; // float32
-                pub const m_iOriginalTeamNumber: usize = 0x12A8; // int32
-                pub const m_iMostRecentTeamNumber: usize = 0x12AC; // int32
-                pub const m_bDroppedNearBuyZone: usize = 0x12B0; // bool
-                pub const m_flNextAttackRenderTimeOffset: usize = 0x12B4; // float32
-                pub const m_bCanBePickedUp: usize = 0x12C8; // bool
-                pub const m_bUseCanOverrideNextOwnerTouchTime: usize = 0x12C9; // bool
-                pub const m_nextOwnerTouchTime: usize = 0x12CC; // GameTime_t
-                pub const m_nextPrevOwnerTouchTime: usize = 0x12D0; // GameTime_t
-                pub const m_nextPrevOwnerUseTime: usize = 0x12D8; // GameTime_t
-                pub const m_hPrevOwner: usize = 0x12DC; // CHandle<CCSPlayerPawn>
-                pub const m_nDropTick: usize = 0x12E0; // GameTick_t
-                pub const m_bWasActiveWeaponWhenDropped: usize = 0x12E4; // bool
-                pub const m_donated: usize = 0x1304; // bool
-                pub const m_fLastShotTime: usize = 0x1308; // GameTime_t
-                pub const m_bWasOwnedByCT: usize = 0x130C; // bool
-                pub const m_bWasOwnedByTerrorist: usize = 0x130D; // bool
-                pub const m_numRemoveUnownedWeaponThink: usize = 0x1310; // int32
+                pub const m_flAttackHoldStartTime: usize = 0x1288; // GameTime_t
+                pub const m_flDroppedAtTime: usize = 0x128C; // GameTime_t
+                pub const m_bIsHauledBack: usize = 0x1294; // bool
+                pub const m_bSilencerOn: usize = 0x1295; // bool
+                pub const m_flTimeSilencerSwitchComplete: usize = 0x1298; // GameTime_t
+                pub const m_bStealthy: usize = 0x129C; // bool
+                pub const m_bInSilentReloadSection: usize = 0x129D; // bool
+                pub const m_bSilentReloadStatCounted: usize = 0x129E; // bool
+                pub const m_bSilentReloadStatPending: usize = 0x129F; // bool
+                pub const m_flStealthHoldStartTime: usize = 0x12A0; // GameTime_t
+                pub const m_bReloadHeldSinceStart: usize = 0x12A4; // bool
+                pub const m_flWeaponActionPlaybackRate: usize = 0x12A8; // float32
+                pub const m_iOriginalTeamNumber: usize = 0x12AC; // int32
+                pub const m_iMostRecentTeamNumber: usize = 0x12B0; // int32
+                pub const m_bDroppedNearBuyZone: usize = 0x12B4; // bool
+                pub const m_flNextAttackRenderTimeOffset: usize = 0x12B8; // float32
+                pub const m_bCanBePickedUp: usize = 0x12D0; // bool
+                pub const m_bUseCanOverrideNextOwnerTouchTime: usize = 0x12D1; // bool
+                pub const m_nextOwnerTouchTime: usize = 0x12D4; // GameTime_t
+                pub const m_nextPrevOwnerTouchTime: usize = 0x12D8; // GameTime_t
+                pub const m_nextPrevOwnerUseTime: usize = 0x12E0; // GameTime_t
+                pub const m_hPrevOwner: usize = 0x12E4; // CHandle<CCSPlayerPawn>
+                pub const m_nDropTick: usize = 0x12E8; // GameTick_t
+                pub const m_bWasActiveWeaponWhenDropped: usize = 0x12EC; // bool
+                pub const m_donated: usize = 0x130C; // bool
+                pub const m_fLastShotTime: usize = 0x1310; // GameTime_t
+                pub const m_bWasOwnedByCT: usize = 0x1314; // bool
+                pub const m_bWasOwnedByTerrorist: usize = 0x1315; // bool
+                pub const m_numRemoveUnownedWeaponThink: usize = 0x1318; // int32
                 pub const m_IronSightController: usize = 0x1370; // CIronSightController
                 pub const m_iIronSightMode: usize = 0x1388; // int32
                 pub const m_flLastLOSTraceFailureTime: usize = 0x138C; // GameTime_t

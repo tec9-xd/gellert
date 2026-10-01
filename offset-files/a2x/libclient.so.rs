@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-09-29 10:05:13.449167368 UTC
+// 2026-10-01 20:14:35.847820660 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -1434,7 +1434,7 @@ pub mod cs2_dumper {
                 pub const m_ullRegisteredAsItemID: usize = 0x1510; // uint64
             }
             // Parent: C_BasePlayerWeapon
-            // Fields count: 56
+            // Fields count: 57
             pub mod C_CSWeaponBase {
                 pub const m_iWeaponGameplayAnimState: usize = 0x2838; // WeaponGameplayAnimState
                 pub const m_flWeaponGameplayAnimStateTimestamp: usize = 0x283C; // GameTime_t
@@ -1459,19 +1459,20 @@ pub mod cs2_dumper {
                 pub const m_flPostponeFireReadyFrac: usize = 0x28C8; // float32
                 pub const m_bInReload: usize = 0x28CC; // bool
                 pub const m_nDeployTick: usize = 0x28D0; // GameTick_t
-                pub const m_flDroppedAtTime: usize = 0x28D4; // GameTime_t
-                pub const m_bIsHauledBack: usize = 0x28DC; // bool
-                pub const m_bSilencerOn: usize = 0x28DD; // bool
-                pub const m_flTimeSilencerSwitchComplete: usize = 0x28E0; // GameTime_t
-                pub const m_bStealthy: usize = 0x28E4; // bool
-                pub const m_bInSilentReloadSection: usize = 0x28E5; // bool
-                pub const m_flStealthHoldStartTime: usize = 0x28E8; // GameTime_t
-                pub const m_bReloadHeldSinceStart: usize = 0x28EC; // bool
-                pub const m_flWeaponActionPlaybackRate: usize = 0x28F0; // float32
-                pub const m_iOriginalTeamNumber: usize = 0x28F4; // int32
-                pub const m_iMostRecentTeamNumber: usize = 0x28F8; // int32
-                pub const m_bDroppedNearBuyZone: usize = 0x28FC; // bool
-                pub const m_flNextAttackRenderTimeOffset: usize = 0x2900; // float32
+                pub const m_flAttackHoldStartTime: usize = 0x28D4; // GameTime_t
+                pub const m_flDroppedAtTime: usize = 0x28D8; // GameTime_t
+                pub const m_bIsHauledBack: usize = 0x28E0; // bool
+                pub const m_bSilencerOn: usize = 0x28E1; // bool
+                pub const m_flTimeSilencerSwitchComplete: usize = 0x28E4; // GameTime_t
+                pub const m_bStealthy: usize = 0x28E8; // bool
+                pub const m_bInSilentReloadSection: usize = 0x28E9; // bool
+                pub const m_flStealthHoldStartTime: usize = 0x28EC; // GameTime_t
+                pub const m_bReloadHeldSinceStart: usize = 0x28F0; // bool
+                pub const m_flWeaponActionPlaybackRate: usize = 0x28F4; // float32
+                pub const m_iOriginalTeamNumber: usize = 0x28F8; // int32
+                pub const m_iMostRecentTeamNumber: usize = 0x28FC; // int32
+                pub const m_bDroppedNearBuyZone: usize = 0x2900; // bool
+                pub const m_flNextAttackRenderTimeOffset: usize = 0x2904; // float32
                 pub const m_bClearWeaponIdentifyingUGC: usize = 0x29B0; // bool
                 pub const m_bVisualsDataSet: usize = 0x29B1; // bool
                 pub const m_bUIWeapon: usize = 0x29B2; // bool

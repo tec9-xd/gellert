@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-09-29 10:05:13.449167368 UTC
+// 2026-10-01 20:14:35.847820660 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: libclient.so
@@ -1417,7 +1417,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_ullRegisteredAsItemID = 0x1510; // uint64
         }
         // Parent: C_BasePlayerWeapon
-        // Fields count: 56
+        // Fields count: 57
         public static class C_CSWeaponBase {
             public const nint m_iWeaponGameplayAnimState = 0x2838; // WeaponGameplayAnimState
             public const nint m_flWeaponGameplayAnimStateTimestamp = 0x283C; // GameTime_t
@@ -1442,19 +1442,20 @@ namespace CS2Dumper.Schemas {
             public const nint m_flPostponeFireReadyFrac = 0x28C8; // float32
             public const nint m_bInReload = 0x28CC; // bool
             public const nint m_nDeployTick = 0x28D0; // GameTick_t
-            public const nint m_flDroppedAtTime = 0x28D4; // GameTime_t
-            public const nint m_bIsHauledBack = 0x28DC; // bool
-            public const nint m_bSilencerOn = 0x28DD; // bool
-            public const nint m_flTimeSilencerSwitchComplete = 0x28E0; // GameTime_t
-            public const nint m_bStealthy = 0x28E4; // bool
-            public const nint m_bInSilentReloadSection = 0x28E5; // bool
-            public const nint m_flStealthHoldStartTime = 0x28E8; // GameTime_t
-            public const nint m_bReloadHeldSinceStart = 0x28EC; // bool
-            public const nint m_flWeaponActionPlaybackRate = 0x28F0; // float32
-            public const nint m_iOriginalTeamNumber = 0x28F4; // int32
-            public const nint m_iMostRecentTeamNumber = 0x28F8; // int32
-            public const nint m_bDroppedNearBuyZone = 0x28FC; // bool
-            public const nint m_flNextAttackRenderTimeOffset = 0x2900; // float32
+            public const nint m_flAttackHoldStartTime = 0x28D4; // GameTime_t
+            public const nint m_flDroppedAtTime = 0x28D8; // GameTime_t
+            public const nint m_bIsHauledBack = 0x28E0; // bool
+            public const nint m_bSilencerOn = 0x28E1; // bool
+            public const nint m_flTimeSilencerSwitchComplete = 0x28E4; // GameTime_t
+            public const nint m_bStealthy = 0x28E8; // bool
+            public const nint m_bInSilentReloadSection = 0x28E9; // bool
+            public const nint m_flStealthHoldStartTime = 0x28EC; // GameTime_t
+            public const nint m_bReloadHeldSinceStart = 0x28F0; // bool
+            public const nint m_flWeaponActionPlaybackRate = 0x28F4; // float32
+            public const nint m_iOriginalTeamNumber = 0x28F8; // int32
+            public const nint m_iMostRecentTeamNumber = 0x28FC; // int32
+            public const nint m_bDroppedNearBuyZone = 0x2900; // bool
+            public const nint m_flNextAttackRenderTimeOffset = 0x2904; // float32
             public const nint m_bClearWeaponIdentifyingUGC = 0x29B0; // bool
             public const nint m_bVisualsDataSet = 0x29B1; // bool
             public const nint m_bUIWeapon = 0x29B2; // bool
