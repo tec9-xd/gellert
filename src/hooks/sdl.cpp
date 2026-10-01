@@ -14,6 +14,13 @@ int peep_events_hook(SDL_Event* events, int numevents, SDL_EventAction action, i
     int ret = peep_events_original(events, numevents, action, min, max);
     if (ret > 0 && sdl_window && ImGui::GetCurrentContext()) {
         for (int i = 0; i < ret; ++i) {
+            if (g_bhop_eat_space &&
+                (events[i].type == SDL_EVENT_KEY_DOWN || events[i].type == SDL_EVENT_KEY_UP) &&
+                events[i].key.scancode == SDL_SCANCODE_SPACE) {
+                events[i].type = SDL_EVENT_KEY_UP;
+                events[i].key.down = false;
+                events[i].key.repeat = false;
+            }
             ImGui_ImplSDL3_ProcessEvent(&events[i]);
             get_input(&events[i]);
         }
@@ -23,13 +30,16 @@ int peep_events_hook(SDL_Event* events, int numevents, SDL_EventAction action, i
 
 const bool* get_keyboard_state_hook(int* nkeys) {
     const bool* keys = get_keyboard_state_original(nkeys);
-    if (!g_bhop_eat_space || !keys) return keys;
+    if (!keys) return keys;
+
     static bool copy[512];
     int n = 512;
-    if (nkeys && *nkeys > 0 && *nkeys < 512) n = *nkeys;
+    if (nkeys && *nkeys > 0 && *nkeys <= 512) n = *nkeys;
     memcpy(copy, keys, (size_t)n);
-    if (n > (int)SDL_SCANCODE_SPACE)
+
+    if (g_bhop_eat_space && n > (int)SDL_SCANCODE_SPACE)
         copy[SDL_SCANCODE_SPACE] = false;
+
     return copy;
 }
 
