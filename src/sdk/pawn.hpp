@@ -17,13 +17,10 @@ enum Bone {
 enum class cs_team : uint8_t { none = 0, spec = 1, t = 2, ct = 3 };
 
 class Pawn {
-
 public:
-
     void* movement_services() {
         return *(void**)((uintptr_t)this + off::m_pMovementServices);
     }
-
     void* scene_node() {
         return *(void**)((uintptr_t)this + off::m_pGameSceneNode);
     }
@@ -32,8 +29,12 @@ public:
     }
     Vec3 get_abs_origin() {
         void* n = scene_node();
-        if (!valid_ptr(n)) return {};
-        return *(Vec3*)((uintptr_t)n + off::m_vecAbsOrigin);
+        if (valid_ptr(n)) {
+            Vec3 o = *(Vec3*)((uintptr_t)n + off::m_vecAbsOrigin);
+            if (o.x != 0.f || o.y != 0.f || o.z != 0.f)
+                return o;
+        }
+        return *(Vec3*)((uintptr_t)this + off::m_vOldOrigin);
     }
     bool is_dormant() {
         void* n = scene_node();

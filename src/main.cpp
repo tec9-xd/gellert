@@ -43,9 +43,11 @@ void entry() {
     mem::client = client;
     view_matrix     = (VMatrix*)(client + off::dwViewMatrix);
     localentity_ptr = (Entity**)(client + off::dwLocalPlayerController);
+    localpawn_ptr   = (Pawn**)(client + off::dwLocalPlayerPawn);
     print("client: %p\n", (void*)client);
-    print("view_matrix: %p\n", view_matrix);
-    print("localentity_ptr: %p\n", localentity_ptr);
+    print("dwViewMatrix            0x%lx -> %p\n", (unsigned long)off::dwViewMatrix, view_matrix);
+    print("dwLocalPlayerController 0x%lx -> %p\n", (unsigned long)off::dwLocalPlayerController, localentity_ptr);
+    print("dwLocalPlayerPawn       0x%lx -> %p\n", (unsigned long)off::dwLocalPlayerPawn, localpawn_ptr);
 
     unsigned long func_addr1 = (unsigned long)sigscan_module(
         "libclient.so",
@@ -72,7 +74,14 @@ void entry() {
         return;
     }
     entity_system = (GameEntitySystem*)*(void**)((uintptr_t)game_resource_service + off::grs_entity_system);
-    print("entity_system: %p\n", entity_system);
+    print("GRS: %p\n", game_resource_service);
+    print("entity_system: %p (GRS+0x%lx)\n", entity_system, (unsigned long)off::grs_entity_system);
+    if (valid_ptr(entity_system)) {
+        Entity* e1 = entity_system->entity_from_index(1);
+        print("entity[1]: %p\n", e1);
+    } else {
+        print("entity_system invalid\n");
+    }
 
     g_funchook = funchook_create();
     int rv = 0;

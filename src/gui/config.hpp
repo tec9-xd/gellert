@@ -71,6 +71,7 @@ struct Config {
 inline Config config;
 inline Pawn*  target_pawn = nullptr;
 inline bool   g_in_air = false;
+inline bool   g_bhop_eat_space = false;
 inline unsigned g_cm_ticks = 0;
 inline void*    g_user_cmd = nullptr;
 inline void*    g_csgo_input = nullptr;
