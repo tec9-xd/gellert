@@ -28,6 +28,7 @@ extern const bool* (*get_keyboard_state_original)(int*);
 int peep_events_hook(SDL_Event* events, int numevents, SDL_EventAction action, int min, int max);
 void get_window_size_hook(SDL_Window* window, int* w, int* h);
 SDL_Window* get_keyboard_focus_hook(void);
+void bhop_inject_space(bool down);
 const bool* get_keyboard_state_hook(int* nkeys);
 
 extern bool (*input_create_move_original)(void*, int, bool);
