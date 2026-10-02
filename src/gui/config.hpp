@@ -67,8 +67,9 @@ struct Config {
         bool bhop = false;
     } movement;
 
-    struct {
+        struct {
         bool debug = false;
+        bool input_passthrough = false;
     } misc;
 };
 

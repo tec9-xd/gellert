@@ -7,6 +7,9 @@ struct MiscFeature final : IFeature {
     const char* tab()  const override { return "Misc"; }
 
     void on_menu() override {
+        ImGui::Checkbox("Input passthrough", &config.misc.input_passthrough);
+        ImGui::TextDisabled("Off = mouse/clicks stay in the menu (default). On = game still receives them.");
+        ImGui::Separator();
         ImGui::Checkbox("Debug", &config.misc.debug);
 
         if (!config.misc.debug)

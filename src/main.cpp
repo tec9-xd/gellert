@@ -201,6 +201,62 @@ void entry() {
     rv = funchook_prepare(g_funchook, (void**)&get_keyboard_state_original, (void*)get_keyboard_state_hook);
     if (rv != 0) { print("Failed to prepare SDL_GetKeyboardState hook\n"); return; }
 
+    get_mouse_state_original = (Uint32 (*)(float*, float*))dlsym(lib_sdl_handle, "SDL_GetMouseState");
+    rv = funchook_prepare(g_funchook, (void**)&get_mouse_state_original, (void*)get_mouse_state_hook);
+    if (rv != 0) { print("Failed to prepare SDL_GetMouseState hook\n"); return; }
+
+    get_relative_mouse_state_original = (Uint32 (*)(float*, float*))dlsym(lib_sdl_handle, "SDL_GetRelativeMouseState");
+    rv = funchook_prepare(g_funchook, (void**)&get_relative_mouse_state_original, (void*)get_relative_mouse_state_hook);
+    if (rv != 0) { print("Failed to prepare SDL_GetRelativeMouseState hook\n"); return; }
+
+    set_window_relative_mouse_mode_original = (bool (*)(SDL_Window*, bool))dlsym(lib_sdl_handle, "SDL_SetWindowRelativeMouseMode");
+    rv = funchook_prepare(g_funchook, (void**)&set_window_relative_mouse_mode_original, (void*)set_window_relative_mouse_mode_hook);
+    if (rv != 0) { print("Failed to prepare SDL_SetWindowRelativeMouseMode hook\n"); return; }
+
+    get_window_relative_mouse_mode_original = (bool (*)(SDL_Window*))dlsym(lib_sdl_handle, "SDL_GetWindowRelativeMouseMode");
+    rv = funchook_prepare(g_funchook, (void**)&get_window_relative_mouse_mode_original, (void*)get_window_relative_mouse_mode_hook);
+    if (rv != 0) { print("Failed to prepare SDL_GetWindowRelativeMouseMode hook\n"); return; }
+
+    warp_mouse_in_window_original = (void (*)(SDL_Window*, float, float))dlsym(lib_sdl_handle, "SDL_WarpMouseInWindow");
+    rv = funchook_prepare(g_funchook, (void**)&warp_mouse_in_window_original, (void*)warp_mouse_in_window_hook);
+    if (rv != 0) { print("Failed to prepare SDL_WarpMouseInWindow hook\n"); return; }
+
+    warp_mouse_global_original = (bool (*)(float, float))dlsym(lib_sdl_handle, "SDL_WarpMouseGlobal");
+    if (warp_mouse_global_original) {
+        rv = funchook_prepare(g_funchook, (void**)&warp_mouse_global_original, (void*)warp_mouse_global_hook);
+        if (rv != 0) { print("Failed to prepare SDL_WarpMouseGlobal hook\n"); return; }
+    }
+
+    show_cursor_original = (bool (*)(void))dlsym(lib_sdl_handle, "SDL_ShowCursor");
+    if (show_cursor_original) {
+        rv = funchook_prepare(g_funchook, (void**)&show_cursor_original, (void*)show_cursor_hook);
+        if (rv != 0) { print("Failed to prepare SDL_ShowCursor hook\n"); return; }
+    }
+
+    hide_cursor_original = (bool (*)(void))dlsym(lib_sdl_handle, "SDL_HideCursor");
+    if (hide_cursor_original) {
+        rv = funchook_prepare(g_funchook, (void**)&hide_cursor_original, (void*)hide_cursor_hook);
+        if (rv != 0) { print("Failed to prepare SDL_HideCursor hook\n"); return; }
+    }
+
+    set_cursor_original = (SDL_Cursor* (*)(SDL_Cursor*))dlsym(lib_sdl_handle, "SDL_SetCursor");
+    if (set_cursor_original) {
+        rv = funchook_prepare(g_funchook, (void**)&set_cursor_original, (void*)set_cursor_hook);
+        if (rv != 0) { print("Failed to prepare SDL_SetCursor hook\n"); return; }
+    }
+
+    set_window_mouse_grab_original = (bool (*)(SDL_Window*, bool))dlsym(lib_sdl_handle, "SDL_SetWindowMouseGrab");
+    if (set_window_mouse_grab_original) {
+        rv = funchook_prepare(g_funchook, (void**)&set_window_mouse_grab_original, (void*)set_window_mouse_grab_hook);
+        if (rv != 0) { print("Failed to prepare SDL_SetWindowMouseGrab hook\n"); return; }
+    }
+
+    set_window_mouse_rect_original = (bool (*)(SDL_Window*, const SDL_Rect*))dlsym(lib_sdl_handle, "SDL_SetWindowMouseRect");
+    if (set_window_mouse_rect_original) {
+        rv = funchook_prepare(g_funchook, (void**)&set_window_mouse_rect_original, (void*)set_window_mouse_rect_hook);
+        if (rv != 0) { print("Failed to prepare SDL_SetWindowMouseRect hook\n"); return; }
+    }
+
     dlclose(lib_sdl_handle);
 
     rv = funchook_install(g_funchook, 0);

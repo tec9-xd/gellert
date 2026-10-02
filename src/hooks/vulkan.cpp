@@ -2,6 +2,7 @@
 #include "../gui/menu.hpp"
 #include "../features/feature.hpp"
 #include "../core/log.hpp"
+#include "../gui/config.hpp"
 
 #include <vulkan/vulkan.hpp>
 #include <vulkan/vulkan_core.h>
@@ -303,9 +304,16 @@ VkResult queue_present_hook(VkQueue queue, const VkPresentInfoKHR* present_info)
 
         if (ImGui::IsKeyPressed(ImGuiKey_Insert, false) || ImGui::IsKeyPressed(ImGuiKey_F11, false))
             menu_focused = !menu_focused;
+
+        sync_menu_mouse();
+
         ImGui::GetIO().MouseDrawCursor = menu_focused;
         ImGui::GetIO().WantCaptureMouse = menu_focused;
         ImGui::GetIO().WantCaptureKeyboard = menu_focused;
+        if (menu_focused && !config.misc.input_passthrough)
+            ImGui::GetIO().ConfigFlags |= ImGuiConfigFlags_NoMouseCursorChange;
+        else
+            ImGui::GetIO().ConfigFlags &= ~ImGuiConfigFlags_NoMouseCursorChange;
 
         ImGui_ImplVulkan_NewFrame();
         ImGui_ImplSDL3_NewFrame();

@@ -7,6 +7,7 @@ extern "C" {
     void* esp_keep();
     void* vis_keep();
     void* tp_keep();
+    void* misc_keep();
 }
 
 void features_force_link() {
@@ -15,4 +16,5 @@ void features_force_link() {
     (void)esp_keep();
     (void)vis_keep();
     (void)tp_keep();
+    (void)misc_keep();
 }
