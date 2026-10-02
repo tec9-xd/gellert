@@ -51,23 +51,31 @@ struct EspFeature final : IFeature {
         g_dbg_dsx = ImGui::GetIO().DisplaySize.x;
         g_dbg_dsy = ImGui::GetIO().DisplaySize.y;
 
-        if (!config.esp.master) return;
-
         ImDrawList* dl = ImGui::GetBackgroundDrawList();
+
+        auto draw_debug = [&]() {
+            if (!config.misc.debug || !dl) return;
+            char dbg[192];
+            snprintf(dbg, sizeof(dbg),
+                     "ESP es:%s vm:%s local:%s t:%d  c:%d p:%d w:%d d:%d  vm00=%.2f ds=%.0fx%.0f",
+                     g_dbg_es ? "Y" : "N",
+                     g_dbg_vm ? "Y" : "N",
+                     g_dbg_local ? "Y" : "N",
+                     g_dbg_team, g_dbg_ctrl, g_dbg_pawn, g_dbg_w2s, g_dbg_drawn,
+                     g_dbg_vm00, g_dbg_dsx, g_dbg_dsy);
+            ImU32 col = g_dbg_es ? IM_COL32(255, 255, 0, 255) : IM_COL32(255, 80, 80, 255);
+            dl->AddText(ImVec2(20, 50), col, dbg);
+        };
+
+        if (!config.esp.master) {
+            draw_debug();
+            return;
+        }
         if (!dl) return;
         dl->Flags &= ~ImDrawListFlags_AntiAliasedLines;
 
-        char dbg[192];
-        snprintf(dbg, sizeof(dbg),
-                 "ESP es:%s vm:%s local:%s t:%d  c:%d p:%d w:%d d:%d  vm00=%.2f ds=%.0fx%.0f",
-                 g_dbg_es ? "Y" : "N",
-                 g_dbg_vm ? "Y" : "N",
-                 g_dbg_local ? "Y" : "N",
-                 g_dbg_team, g_dbg_ctrl, g_dbg_pawn, g_dbg_w2s, g_dbg_drawn,
-                 g_dbg_vm00, g_dbg_dsx, g_dbg_dsy);
-
         if (!g_dbg_es) {
-            dl->AddText(ImVec2(20, 50), IM_COL32(255, 80, 80, 255), dbg);
+            draw_debug();
             return;
         }
 
@@ -165,14 +173,7 @@ struct EspFeature final : IFeature {
             }
         }
 
-        snprintf(dbg, sizeof(dbg),
-                 "ESP es:%s vm:%s local:%s t:%d  c:%d p:%d w:%d d:%d  vm00=%.2f ds=%.0fx%.0f",
-                 g_dbg_es ? "Y" : "N",
-                 g_dbg_vm ? "Y" : "N",
-                 g_dbg_local ? "Y" : "N",
-                 g_dbg_team, g_dbg_ctrl, g_dbg_pawn, g_dbg_w2s, g_dbg_drawn,
-                 g_dbg_vm00, g_dbg_dsx, g_dbg_dsy);
-        dl->AddText(ImVec2(20, 50), IM_COL32(255, 255, 0, 255), dbg);
+        draw_debug();
     }
 
     void on_menu() override {
@@ -195,15 +196,18 @@ struct EspFeature final : IFeature {
         ImGui::ColorEdit4("##sk", config.esp.player.skeleton_color.to_arr(),
                           ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoTooltip);
         ImGui::Checkbox("Target flag", &config.esp.player.target_indicator);
-        ImGui::Separator();
-        ImGui::Text("es:%s  vm:%s  local:%s  team:%d",
-                    g_dbg_es ? "Y" : "N", g_dbg_vm ? "Y" : "N",
-                    g_dbg_local ? "Y" : "N", g_dbg_team);
-        ImGui::Text("ctrl=%d  pawn=%d  w2s=%d  drawn=%d",
-                    g_dbg_ctrl, g_dbg_pawn, g_dbg_w2s, g_dbg_drawn);
-        ImGui::Text("vm00=%.3f  vm11=%.3f  ds=%.0fx%.0f",
-                    g_dbg_vm00, g_dbg_vm11, g_dbg_dsx, g_dbg_dsy);
-        ImGui::TextWrapped("ctrl=0 entity list/GRS | pawn=0 handle | w2s=0 viewmatrix | drawn=0 filters");
+
+        if (config.misc.debug) {
+            ImGui::Separator();
+            ImGui::Text("es:%s  vm:%s  local:%s  team:%d",
+                        g_dbg_es ? "Y" : "N", g_dbg_vm ? "Y" : "N",
+                        g_dbg_local ? "Y" : "N", g_dbg_team);
+            ImGui::Text("ctrl=%d  pawn=%d  w2s=%d  drawn=%d",
+                        g_dbg_ctrl, g_dbg_pawn, g_dbg_w2s, g_dbg_drawn);
+            ImGui::Text("vm00=%.3f  vm11=%.3f  ds=%.0fx%.0f",
+                        g_dbg_vm00, g_dbg_vm11, g_dbg_dsx, g_dbg_dsy);
+            ImGui::TextWrapped("ctrl=0 entity list/GRS | pawn=0 handle | w2s=0 viewmatrix | drawn=0 filters");
+        }
     }
 };
 REGISTER_FEATURE(EspFeature);

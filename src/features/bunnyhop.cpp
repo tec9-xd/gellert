@@ -90,13 +90,13 @@ static void hop() {
 
     if (g_in_air) {
         if (!g_bhop_released) {
-            bhop_inject_space(false);   // -jump, so the next down is a new edge
+            bhop_inject_space(false);
             g_bhop_inj_up++;
             g_bhop_released = true;
             write_ms_edge(pawn, false);
         }
     } else if (g_bhop_released || g_was_air) {
-        bhop_inject_space(true);        // +jump on landing
+        bhop_inject_space(true);
         g_bhop_inj_down++;
         g_bhop_released = false;
         write_ms_edge(pawn, true);
@@ -114,6 +114,8 @@ struct BunnyhopFeature final : IFeature {
 
     void on_menu() override {
         ImGui::Checkbox("Bunnyhop", &config.movement.bhop);
+        if (!config.misc.debug)
+            return;
         ImGui::Text("space: %s   grounded: %s   air: %s",
                     g_space ? "YES" : "no",
                     g_grounded ? "YES" : "no",

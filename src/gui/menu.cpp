@@ -37,7 +37,7 @@ void draw_menu() {
 
     ImGuiStyle* style = &ImGui::GetStyle();
 
-    static const char* tabs[] = { "Aimbot", "ESP", "Movement", "Visuals", "Sounds" };
+    static const char* tabs[] = { "Aimbot", "ESP", "Movement", "Visuals", "Sounds", "Misc" };
     constexpr int tab_count = (int)(sizeof(tabs) / sizeof(tabs[0]));
 
     static int tab = 0;
@@ -58,11 +58,6 @@ void draw_menu() {
     ImGui::BeginChild("##TabBody");
     if (tab >= 0 && tab < tab_count)
         FeatureRegistry::get().menu_for_tab(tabs[tab]);
-
-    ImGui::Separator();
-    ImGui::TextDisabled("loaded:");
-    for (auto* f : FeatureRegistry::get().all())
-        ImGui::TextDisabled("  %s [%s]", f->name(), f->tab());
     ImGui::EndChild();
 
     ImGui::End();
