@@ -1,0 +1,14 @@
+# build
+obj/
+*.o
+*.so
+cs2.so
+
+# editor / junk
+.vscode/
+.idea/
+*~
+*.swp
+
+# deps that get cloned by build.sh
+libs/funchook/build/
