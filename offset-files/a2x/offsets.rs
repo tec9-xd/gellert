@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-01 20:14:35.847820660 UTC
+// 2026-10-03 10:27:49.846771084 UTC
 
 #![allow(non_upper_case_globals, unused)]
 
@@ -7,19 +7,19 @@ pub mod cs2_dumper {
     pub mod offsets {
         // Module: libclient.so
         pub mod libclient_so {
-            pub const dwEntityList: usize = 0x46BB280;
-            pub const dwGameEntitySystem: usize = 0x4B8D7D0;
+            pub const dwEntityList: usize = 0x46BB380;
+            pub const dwGameEntitySystem: usize = 0x4B8D8D0;
             pub const dwGameEntitySystem_highestEntityIndex: usize = 0x2120;
-            pub const dwGlobalVars: usize = 0x467FFF8;
-            pub const dwGlowManager: usize = 0x49319D8;
-            pub const dwLocalPlayerController: usize = 0x4900698;
-            pub const dwLocalPlayerPawn: usize = 0x4938758;
-            pub const dwPlantedC4: usize = 0x46D03A7;
-            pub const dwPrediction: usize = 0x4938610;
-            pub const dwSensitivity: usize = 0x4936878;
+            pub const dwGlobalVars: usize = 0x46800F8;
+            pub const dwGlowManager: usize = 0x4931AD8;
+            pub const dwLocalPlayerController: usize = 0x4900798;
+            pub const dwLocalPlayerPawn: usize = 0x4938858;
+            pub const dwPlantedC4: usize = 0x46D04A7;
+            pub const dwPrediction: usize = 0x4938710;
+            pub const dwSensitivity: usize = 0x4936978;
             pub const dwSensitivity_sensitivity: usize = 0x58;
-            pub const dwViewMatrix: usize = 0x493FD80;
-            pub const dwViewRender: usize = 0x493FE90;
+            pub const dwViewMatrix: usize = 0x493FE80;
+            pub const dwViewRender: usize = 0x493FF90;
         }
         // Module: libengine2.so
         pub mod libengine2_so {

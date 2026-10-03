@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-01 20:14:35.847820660 UTC
+// 2026-10-03 10:27:49.846771084 UTC
 
 #pragma once
 
@@ -14,8 +14,8 @@ namespace cs2_dumper {
         }
         // Module: libclient.so
         namespace libclient_so {
-            constexpr std::ptrdiff_t  = 0xB7800000;
-            constexpr std::ptrdiff_t ()�n�v = 0x45295D0;
+            constexpr std::ptrdiff_t  = 0x5CA00000;
+            constexpr std::ptrdiff_t ()̿x = 0x45296D0;
         }
         // Module: libengine2.so
         namespace libengine2_so {

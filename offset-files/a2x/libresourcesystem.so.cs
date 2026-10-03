@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-01 20:14:35.847820660 UTC
+// 2026-10-03 10:27:49.846771084 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: libresourcesystem.so

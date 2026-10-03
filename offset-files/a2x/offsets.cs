@@ -1,22 +1,22 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-01 20:14:35.847820660 UTC
+// 2026-10-03 10:27:49.846771084 UTC
 
 namespace CS2Dumper.Offsets {
     // Module: libclient.so
     public static class LibclientSo {
-        public const nint dwEntityList = 0x46BB280;
-        public const nint dwGameEntitySystem = 0x4B8D7D0;
+        public const nint dwEntityList = 0x46BB380;
+        public const nint dwGameEntitySystem = 0x4B8D8D0;
         public const nint dwGameEntitySystem_highestEntityIndex = 0x2120;
-        public const nint dwGlobalVars = 0x467FFF8;
-        public const nint dwGlowManager = 0x49319D8;
-        public const nint dwLocalPlayerController = 0x4900698;
-        public const nint dwLocalPlayerPawn = 0x4938758;
-        public const nint dwPlantedC4 = 0x46D03A7;
-        public const nint dwPrediction = 0x4938610;
-        public const nint dwSensitivity = 0x4936878;
+        public const nint dwGlobalVars = 0x46800F8;
+        public const nint dwGlowManager = 0x4931AD8;
+        public const nint dwLocalPlayerController = 0x4900798;
+        public const nint dwLocalPlayerPawn = 0x4938858;
+        public const nint dwPlantedC4 = 0x46D04A7;
+        public const nint dwPrediction = 0x4938710;
+        public const nint dwSensitivity = 0x4936978;
         public const nint dwSensitivity_sensitivity = 0x58;
-        public const nint dwViewMatrix = 0x493FD80;
-        public const nint dwViewRender = 0x493FE90;
+        public const nint dwViewMatrix = 0x493FE80;
+        public const nint dwViewRender = 0x493FF90;
     }
     // Module: libengine2.so
     public static class Libengine2So {

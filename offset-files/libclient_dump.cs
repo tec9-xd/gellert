@@ -2,15 +2,15 @@
 // # github.com/islavikfx
 // # MIT License
 
-// # 2026 October 01, 09:56PM
-// # Runtime PID: 7736
+// # 2026 October 03, 12:23PM
+// # Runtime PID: 6492
 // # Game version: [Input]
 
 // # Parsed classes: 351;
 // # Dumping only libclient.so;
-return libclient_so (0x76ed48800000) {
+return libclient_so (0x78bfa3600000) {
 
-    // Address: 0x4671708
+    // Address: 0x4671808
     public class C4LightEffect_t
     {
         // Fields (2):
@@ -18,7 +18,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_hCarriedHostageProp = 0x4c;
     }
 
-    // Address: 0x4648208
+    // Address: 0x4648308
     public class CAnimGraph2InstancePtr
     {
         // Fields (14):
@@ -38,7 +38,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_children = 0x120;
     }
 
-    // Address: 0x4648b00
+    // Address: 0x4648c00
     public class CAnimGraph2ParamOptionalRef
     {
         // Fields (4):
@@ -48,7 +48,7 @@ return libclient_so (0x76ed48800000) {
         static readonly int s_npc_tactic_phase = 0x20;
     }
 
-    // Address: 0x46489c8
+    // Address: 0x4648ac8
     public class CAnimGraphControllerBase
     {
         // Fields (5):
@@ -59,7 +59,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nState = 0x20;
     }
 
-    // Address: 0x46359c0
+    // Address: 0x4635ac0
     public class CAnimGraphTagRef
     {
         // Fields (16):
@@ -81,7 +81,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bGradientFogNeedsTextures = 0x7ba;
     }
 
-    // Address: 0x4678250
+    // Address: 0x4678350
     public class CBaseAnimGraph
     {
         // Fields (2):
@@ -89,7 +89,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nStageCount = 0xc;
     }
 
-    // Address: 0x4647d30
+    // Address: 0x4647e30
     public class CBaseAnimGraphController
     {
         // Fields (7):
@@ -102,7 +102,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_DamageLevels = 0x38;
     }
 
-    // Address: 0x4646bc8
+    // Address: 0x4646cc8
     public class CBaseProp
     {
         // Fields (5):
@@ -113,7 +113,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flSpeed = 0x2c;
     }
 
-    // Address: 0x4648440
+    // Address: 0x4648540
     public class CBodyComponent
     {
         // Fields (9):
@@ -128,7 +128,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_strings = 0x68;
     }
 
-    // Address: 0x4647c30
+    // Address: 0x4647d30
     public class CBodyComponentBaseAnimGraph
     {
         // Fields (4):
@@ -138,7 +138,7 @@ return libclient_so (0x76ed48800000) {
         public readonly IntPtr m_pAnimGraphDestructibleGraphController = 0x68;
     }
 
-    // Address: 0x4634090
+    // Address: 0x4634190
     public class CBodyComponentSkeletonInstance
     {
         // Fields (18):
@@ -162,7 +162,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bOverrideNoiseStrength = 0x7c3;
     }
 
-    // Address: 0x4679f90
+    // Address: 0x467a090
     external class CBreakableProp_API::SetHealth
     {
         // Fields (6):
@@ -174,7 +174,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nStepside = 0x280;
     }
 
-    // Address: 0x467a120
+    // Address: 0x467a220
     external class CBreakableProp_API::physdamagescale
     {
         // Fields (18):
@@ -198,7 +198,7 @@ return libclient_so (0x76ed48800000) {
         public readonly Vector3 m_vecOldViewAngles = 0x240;
     }
 
-    // Address: 0x46698e8
+    // Address: 0x46699e8
     public class CCSGameModeRules_Deathmatch
     {
         // Fields (2):
@@ -206,7 +206,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_hSkyMaterial = 0x780;
     }
 
-    // Address: 0x4673250
+    // Address: 0x4673350
     public class CCSObserver_MovementServices
     {
         // Fields (28):
@@ -240,7 +240,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flinchIsOnFire = 0x560;
     }
 
-    // Address: 0x46730a8
+    // Address: 0x46731a8
     public class CCSObserver_UseServices
     {
         // Fields (5):
@@ -251,7 +251,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_szPlaceName = 0x7bd;
     }
 
-    // Address: 0x46746b0
+    // Address: 0x46747b0
     public class CCSPlayerAnimationState
     {
         // Fields (9):
@@ -266,7 +266,7 @@ return libclient_so (0x76ed48800000) {
         public readonly Vector3 m_vecServerAuthoritativeWeaponSlots = 0x88;
     }
 
-    // Address: 0x46749c8
+    // Address: 0x4674ac8
     internal class CCSPlayerAnimationState::AirAction_t
     {
         // Fields (15):
@@ -287,7 +287,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_killType = 0x75;
     }
 
-    // Address: 0x4674968
+    // Address: 0x4674a68
     internal class CCSPlayerAnimationState::GroundMoveState_t
     {
         // Fields (4):
@@ -297,7 +297,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_iCashSpentThisRound = 0x4c;
     }
 
-    // Address: 0x4674130
+    // Address: 0x4674230
     public class CCSPlayerController
     {
         // Fields (9):
@@ -312,7 +312,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flLastLandedVelocityZ = 0x30;
     }
 
-    // Address: 0x4676ba8
+    // Address: 0x4676ca8
     public class CCSPlayerController_ActionTrackingServices
     {
         // Fields (3):
@@ -321,7 +321,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_iHealthMax = 0x7b8;
     }
 
-    // Address: 0x4676888
+    // Address: 0x4676988
     public class CCSPlayerController_DamageServices
     {
         // Fields (3):
@@ -330,7 +330,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_hFilter = 0x808;
     }
 
-    // Address: 0x4674468
+    // Address: 0x4674568
     public class CCSPlayer_BulletServices
     {
         // Fields (2):
@@ -338,7 +338,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flJumpPressedTime = 0x14;
     }
 
-    // Address: 0x4683fa8
+    // Address: 0x46840a8
     public class CCSPlayer_GlowServices
     {
         // Fields (2):
@@ -346,7 +346,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flInitialModelScale = 0x45c0;
     }
 
-    // Address: 0x4673668
+    // Address: 0x4673768
     public class CCSPlayer_HostageServices
     {
         // Fields (49):
@@ -401,7 +401,20 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bHasEverProcessedCommand = 0xfd0;
     }
 
-    // Address: 0x4674f48
+    // Address: 0x4675670
+    public class CCSPlayer_MovementServices
+    {
+        // Fields (7):
+        public readonly int m_nNextPrimaryAttackTick = 0x27a8;
+        public readonly float m_flNextPrimaryAttackTickRatio = 0x27ac;
+        public readonly int m_nNextSecondaryAttackTick = 0x27b0;
+        public readonly float m_flNextSecondaryAttackTickRatio = 0x27b4;
+        public readonly int m_iClip1 = 0x27b8;
+        public readonly int m_iClip2 = 0x27bc;
+        public readonly IntPtr m_pReserveAmmo = 0x27c0;
+    }
+
+    // Address: 0x4675048
     public class CCSPlayer_PingServices
     {
         // Fields (20):
@@ -427,7 +440,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_reloadStage = 0x288;
     }
 
-    // Address: 0x46702a8
+    // Address: 0x46703a8
     public class CCSWeaponBaseVData
     {
         // Fields (13):
@@ -446,7 +459,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flSpeedRatio = 0xa8;
     }
 
-    // Address: 0x46825d0
+    // Address: 0x46826d0
     public class CCitadelSoundOpvarSetOBB
     {
         // Fields (10):
@@ -462,7 +475,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_vOutTangentWorld = 0x7c0;
     }
 
-    // Address: 0x463e930
+    // Address: 0x463ea30
     public class CCollisionProperty
     {
         // Fields (6):
@@ -474,7 +487,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bFastRefresh = 0x79d;
     }
 
-    // Address: 0x46ada60
+    // Address: 0x46adb60
     public class CColorGradient
     {
         // Fields (8):
@@ -488,7 +501,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nBreakDestInstruction = 0x58;
     }
 
-    // Address: 0x46b9388
+    // Address: 0x46b9488
     public class CCompositeMaterialEditorDoc
     {
         // Fields (37):
@@ -531,7 +544,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nPanoramaRenderRes = 0x280;
     }
 
-    // Address: 0x4676948
+    // Address: 0x4676a48
     public class CDamageRecord
     {
         // Fields (3):
@@ -540,7 +553,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_OnFail = 0x798;
     }
 
-    // Address: 0x464a3a8
+    // Address: 0x464a4a8
     public class CDebugDrawHistoryData
     {
         // Fields (13):
@@ -559,7 +572,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flCurrentTime = 0x7e0;
     }
 
-    // Address: 0x464b728
+    // Address: 0x464b828
     public class CDebugOverlayCombinedTypes_t
     {
         // Fields (7):
@@ -572,7 +585,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bPassthoughCaller = 0x7b4;
     }
 
-    // Address: 0x4642f28
+    // Address: 0x4643028
     public class CDecalInstance
     {
         // Fields (18):
@@ -596,7 +609,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flFadeDuration = 0x9b8;
     }
 
-    // Address: 0x4649c08
+    // Address: 0x4649d08
     public class CDestructiblePart
     {
         // Fields (14):
@@ -616,7 +629,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bConvertToDebrisWhenPossible = 0x1151;
     }
 
-    // Address: 0x4649a08
+    // Address: 0x4649b08
     public class CDestructiblePartsComponent
     {
         // Fields (7):
@@ -629,7 +642,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flRenderFxDuration = 0x20;
     }
 
-    // Address: 0x46495a8
+    // Address: 0x46496a8
     public class CDynamicPropGraphController
     {
         // Fields (3):
@@ -638,7 +651,7 @@ return libclient_so (0x76ed48800000) {
         static readonly int s_goal_source_location = 0x10;
     }
 
-    // Address: 0x4642280
+    // Address: 0x4642380
     public class CEmbeddedSubclass
     {
         // Fields (3):
@@ -647,7 +660,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flPhysicsForceDamage = 0x14;
     }
 
-    // Address: 0x46b74a8
+    // Address: 0x46b75a8
     public class CEntityIOOutput
     {
         // Fields (3):
@@ -656,7 +669,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_KVthumbnail = 0x28;
     }
 
-    // Address: 0x4636960
+    // Address: 0x4636a60
     external class CEnvVolumetricFogController_API::SetAnisotropy
     {
         // Fields (7):
@@ -669,7 +682,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flLastGameTime = 0x79c;
     }
 
-    // Address: 0x464f168
+    // Address: 0x464f268
     public class CExplosionTypeData
     {
         // Fields (4):
@@ -679,7 +692,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bIgnoreParentRotation = 0x8d4;
     }
 
-    // Address: 0x4678e10
+    // Address: 0x4678f10
     public class CFilterClass
     {
         // Fields (26):
@@ -711,7 +724,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bOldFrozen = 0x15c9;
     }
 
-    // Address: 0x46786a8
+    // Address: 0x46787a8
     public class CFilterLOS
     {
         // Fields (4):
@@ -721,7 +734,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_sRequiredAddons = 0x18;
     }
 
-    // Address: 0x4670ee8
+    // Address: 0x4670fe8
     public class CFiringModeFloat
     {
         // Fields (5):
@@ -732,7 +745,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_weaponCarryOverIntoThisRound = 0x130;
     }
 
-    // Address: 0x464ef48
+    // Address: 0x464f048
     public class CFlashlightEffect
     {
         // Fields (9):
@@ -747,7 +760,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_worldSpaceBoneComputationOrder = 0x1260;
     }
 
-    // Address: 0x4662188
+    // Address: 0x4662288
     public class CFootstepTableHandle
     {
         // Fields (4):
@@ -757,7 +770,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nRenderHeight = 0x24;
     }
 
-    // Address: 0x46adc28
+    // Address: 0x46add28
     public class CFuseProgram
     {
         // Fields (5):
@@ -768,7 +781,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nSrcInstruction = 0x48;
     }
 
-    // Address: 0x46ae2e8
+    // Address: 0x46ae3e8
     public class CFuseSymbolTable
     {
         // Fields (9):
@@ -783,7 +796,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_Metadata = 0x50;
     }
 
-    // Address: 0x464ddd0
+    // Address: 0x464ded0
     public class CGameSceneNode
     {
         // Fields (13):
@@ -802,7 +815,7 @@ return libclient_so (0x76ed48800000) {
         public readonly Vector3 m_vecTempEntAcceleration = 0x128c;
     }
 
-    // Address: 0x464e2e8
+    // Address: 0x464e3e8
     public class CGameSceneNodeHandle
     {
         // Fields (11):
@@ -819,7 +832,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_soundEventHash = 0x808;
     }
 
-    // Address: 0x469ec08
+    // Address: 0x469ed08
     public class CHECK_CONTENT
     {
         // Fields (13):
@@ -838,7 +851,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_modelSpaceBoneSamplingIndices = 0x1e0;
     }
 
-    // Address: 0x464d528
+    // Address: 0x464d628
     public class CInButtonState
     {
         // Fields (3):
@@ -847,7 +860,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_timescale = 0x10;
     }
 
-    // Address: 0x4633bb0
+    // Address: 0x4633cb0
     public class CInfoDynamicShadowHintBox
     {
         // Fields (12):
@@ -865,7 +878,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bDisabled = 0x1104;
     }
 
-    // Address: 0x463ab88
+    // Address: 0x463ac88
     public class CInfoFan
     {
         // Fields (11):
@@ -882,7 +895,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_snapshotFilter = 0x2ec;
     }
 
-    // Address: 0x463a190
+    // Address: 0x463a290
     public class CInfoWorldLayer
     {
         // Fields (4):
@@ -892,7 +905,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_vPos = 0x790;
     }
 
-    // Address: 0x46ad688
+    // Address: 0x46ad788
     public class CLOSE_PAREN
     {
         // Fields (15):
@@ -913,7 +926,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_OutputConnections = 0x140;
     }
 
-    // Address: 0x4633088
+    // Address: 0x4633188
     public class CLightComponent
     {
         // Fields (2):
@@ -921,7 +934,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flWheelDrag = 0x4;
     }
 
-    // Address: 0x464d348
+    // Address: 0x464d448
     public class CLogicRelay
     {
         // Fields (7):
@@ -934,7 +947,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bStopped = 0x220;
     }
 
-    // Address: 0x469edc8
+    // Address: 0x469eec8
     public class CMS_EncryptedData_encrypt
     {
         // Fields (2):
@@ -942,7 +955,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bIsStatic = 0x8;
     }
 
-    // Address: 0x469ef88
+    // Address: 0x469f088
     public class CMS_RECIPIENTINFO_KTRI_DECRYPT
     {
         // Fields (9):
@@ -957,7 +970,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bIsScaleStatic = 0x42;
     }
 
-    // Address: 0x469eea8
+    // Address: 0x469efa8
     public class CMS_ReceiptRequest_create0
     {
         // Fields (2):
@@ -965,7 +978,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flRangeLength = 0x4;
     }
 
-    // Address: 0x464ecc8
+    // Address: 0x464edc8
     public class CNetworkOriginCellCoordQuantizedVector
     {
         // Fields (6):
@@ -977,7 +990,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flCyclesPerSecond = 0x14;
     }
 
-    // Address: 0x464e9a8
+    // Address: 0x464eaa8
     public class CNetworkOriginQuantizedVectorWS
     {
         // Fields (8):
@@ -991,7 +1004,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flPrevCycleForAnimEventDetection = 0x24;
     }
 
-    // Address: 0x464e7e8
+    // Address: 0x464e8e8
     public class CNetworkViewOffsetVector
     {
         // Fields (14):
@@ -1011,7 +1024,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nClothUpdateFlags = 0x2b4;
     }
 
-    // Address: 0x46b7cc8
+    // Address: 0x46b7dc8
     public class CNewParticleEffect
     {
         // Fields (29):
@@ -1046,7 +1059,7 @@ return libclient_so (0x76ed48800000) {
         public readonly Vector3 m_vecConditions = 0x378;
     }
 
-    // Address: 0x46a55a8
+    // Address: 0x46a56a8
     internal class CNmAndNode::CDefinition
     {
         // Fields (3):
@@ -1055,7 +1068,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_defaultValue = 0x10;
     }
 
-    // Address: 0x46a15a8
+    // Address: 0x46a16a8
     public class CNmBitFlags
     {
         // Fields (7):
@@ -1068,7 +1081,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_effectName = 0x38;
     }
 
-    // Address: 0x46a4ca8
+    // Address: 0x46a4da8
     internal class CNmBlend2DNode::CDefinition
     {
         // Fields (4):
@@ -1078,7 +1091,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_ruleCondition = 0x1e;
     }
 
-    // Address: 0x46a31c8
+    // Address: 0x46a32c8
     public class CNmBodyGroupEvent
     {
         // Fields (6):
@@ -1090,7 +1103,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flBlendTimeSeconds = 0x68;
     }
 
-    // Address: 0x46a4e28
+    // Address: 0x46a4f28
     internal class CNmBodyGroupNode::CDefinition
     {
         // Fields (2):
@@ -1098,7 +1111,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_infoType = 0xc;
     }
 
-    // Address: 0x46a51a8
+    // Address: 0x46a52a8
     internal class CNmBoneMaskBlendNode::CDefinition
     {
         // Fields (3):
@@ -1107,7 +1120,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_eventConditionRules = 0x10;
     }
 
-    // Address: 0x46a5368
+    // Address: 0x46a5468
     internal class CNmBoneMaskNode::CDefinition
     {
         // Fields (3):
@@ -1116,7 +1129,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_conditions = 0x10;
     }
 
-    // Address: 0x46a5048
+    // Address: 0x46a5148
     internal class CNmBoneMaskSelectorNode::CDefinition
     {
         // Fields (2):
@@ -1124,7 +1137,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_eventConditionRules = 0xc;
     }
 
-    // Address: 0x46a4f08
+    // Address: 0x46a5008
     internal class CNmBoneMaskSwitchNode::CDefinition
     {
         // Fields (3):
@@ -1133,7 +1146,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_syncEventIdx = 0x10;
     }
 
-    // Address: 0x46a0908
+    // Address: 0x46a0a08
     public class CNmBoneWeightList
     {
         // Fields (13):
@@ -1152,7 +1165,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nSpecialDependencyHash = 0xf8;
     }
 
-    // Address: 0x46a5748
+    // Address: 0x46a5848
     internal class CNmCachedVectorNode::CDefinition
     {
         // Fields (3):
@@ -1161,7 +1174,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_eventIDs = 0x10;
     }
 
-    // Address: 0x46a32c8
+    // Address: 0x46a33c8
     public class CNmCameraFOVEvent
     {
         // Fields (3):
@@ -1170,7 +1183,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nBlendWeightValueNodeIdx = 0xe;
     }
 
-    // Address: 0x46a5b28
+    // Address: 0x46a5c28
     internal class CNmChainLookatNode::CDefinition
     {
         // Fields (5):
@@ -1181,7 +1194,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_easingOp = 0x50;
     }
 
-    // Address: 0x46a5ce8
+    // Address: 0x46a5de8
     internal class CNmClipNode::CDefinition
     {
         // Fields (5):
@@ -1192,7 +1205,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flTrueValue = 0x14;
     }
 
-    // Address: 0x46a5e88
+    // Address: 0x46a5f88
     internal class CNmClipReferenceNode::CDefinition
     {
         // Fields (3):
@@ -1201,7 +1214,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bIsInclusiveCheck = 0x16;
     }
 
-    // Address: 0x46a6228
+    // Address: 0x46a6328
     internal class CNmConstBoolNode::CDefinition
     {
         // Fields (5):
@@ -1212,7 +1225,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bUseStartValue = 0x1a;
     }
 
-    // Address: 0x46a6168
+    // Address: 0x46a6268
     internal class CNmConstIDNode::CDefinition
     {
         // Fields (2):
@@ -1220,7 +1233,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_curve = 0x10;
     }
 
-    // Address: 0x46a5f28
+    // Address: 0x46a6028
     internal class CNmConstTargetNode::CDefinition
     {
         // Fields (5):
@@ -1231,7 +1244,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flComparisonValue = 0x14;
     }
 
-    // Address: 0x46a5fe8
+    // Address: 0x46a60e8
     internal class CNmConstVectorNode::CDefinition
     {
         // Fields (6):
@@ -1243,7 +1256,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flValueB = 0x14;
     }
 
-    // Address: 0x46a1288
+    // Address: 0x46a1388
     public class CNmContactAudioActionVData
     {
         // Fields (3):
@@ -1252,7 +1265,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_choiceName = 0x28;
     }
 
-    // Address: 0x46a11e8
+    // Address: 0x46a12e8
     public class CNmContactAudioTypeVData
     {
         // Fields (12):
@@ -1270,7 +1283,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bIsRunningFromDeserializedData = 0x129;
     }
 
-    // Address: 0x46a69e8
+    // Address: 0x46a6ae8
     internal class CNmControlParameterBoolNode::CDefinition
     {
         // Fields (8):
@@ -1284,7 +1297,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bIsTargetInWorldSpace = 0x2d;
     }
 
-    // Address: 0x46a68a8
+    // Address: 0x46a69a8
     internal class CNmControlParameterFloatNode::CDefinition
     {
         // Fields (4):
@@ -1294,7 +1307,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_mode = 0x22;
     }
 
-    // Address: 0x46a6da8
+    // Address: 0x46a6ea8
     internal class CNmCurrentSyncEventIDNode::CDefinition
     {
         // Fields (4):
@@ -1304,7 +1317,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_values = 0x40;
     }
 
-    // Address: 0x46a6cc8
+    // Address: 0x46a6dc8
     internal class CNmCurrentSyncEventNode::CDefinition
     {
         // Fields (5):
@@ -1315,7 +1328,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_trueValue = 0x18;
     }
 
-    // Address: 0x46a3ca8
+    // Address: 0x46a3da8
     public class CNmEntityAttributeFloatEvent
     {
         // Fields (9):
@@ -1330,7 +1343,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bIsTargetInWorldSpace = 0x69;
     }
 
-    // Address: 0x46a3d68
+    // Address: 0x46a3e68
     public class CNmEntityAttributeIntEvent
     {
         // Fields (8):
@@ -1344,7 +1357,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nStartSyncEventOffset = 0x44;
     }
 
-    // Address: 0x46a7908
+    // Address: 0x46a7a08
     internal class CNmExternalPoseNode::CDefinition
     {
         // Fields (2):
@@ -1352,7 +1365,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nFallbackNodeIdx = 0xc;
     }
 
-    // Address: 0x46a52a8
+    // Address: 0x46a53a8
     internal class CNmFixedWeightBoneMaskNode::CDefinition
     {
         // Fields (3):
@@ -1361,7 +1374,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_eventConditionRules = 0x10;
     }
 
-    // Address: 0x46a86e8
+    // Address: 0x46a87e8
     internal class CNmFloatAngleMathNode::Operation_t
     {
         // Fields (11):
@@ -1378,7 +1391,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bUseActualElapsedTimeInStateForTimedEvents = 0xa7;
     }
 
-    // Address: 0x46a1748
+    // Address: 0x46a1848
     public class CNmFloatChannelData
     {
         // Fields (5):
@@ -1389,7 +1402,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_audioInfo = 0x38;
     }
 
-    // Address: 0x46a1888
+    // Address: 0x46a1988
     public class CNmFloatChannelSet_t
     {
         // Fields (2):
@@ -1397,7 +1410,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_curve = 0x20;
     }
 
-    // Address: 0x46a7e28
+    // Address: 0x46a7f28
     internal class CNmFloatComparisonNode::CDefinition
     {
         // Fields (5):
@@ -1408,7 +1421,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bIgnoreInvalidOptions = 0x5c;
     }
 
-    // Address: 0x46a3768
+    // Address: 0x46a3868
     public class CNmFloatCurveEvent
     {
         // Fields (2):
@@ -1416,7 +1429,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_mode = 0xc;
     }
 
-    // Address: 0x46a80c8
+    // Address: 0x46a81c8
     internal class CNmFloatCurveNode::CDefinition
     {
         // Fields (5):
@@ -1427,7 +1440,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bHasWeightsSet = 0x3b;
     }
 
-    // Address: 0x46a82e8
+    // Address: 0x46a83e8
     internal class CNmFloatEaseNode::CDefinition
     {
         // Fields (2):
@@ -1435,7 +1448,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_conditionNodeIndices = 0x28;
     }
 
-    // Address: 0x46a7f68
+    // Address: 0x46a8068
     internal class CNmFloatMathNode::CDefinition
     {
         // Fields (5):
@@ -1446,7 +1459,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bHasWeightsSet = 0x3b;
     }
 
-    // Address: 0x46a7d28
+    // Address: 0x46a7e28
     internal class CNmFloatRangeComparisonNode::CDefinition
     {
         // Fields (5):
@@ -1457,7 +1470,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bIgnoreInvalidOptions = 0x5c;
     }
 
-    // Address: 0x46a8608
+    // Address: 0x46a8708
     internal class CNmFloatRemapNode::RemapRange_t
     {
         // Fields (2):
@@ -1465,7 +1478,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flDefaultInputValue = 0x10;
     }
 
-    // Address: 0x46a79c8
+    // Address: 0x46a7ac8
     internal class CNmFloatSelectorNode::CDefinition
     {
         // Fields (8):
@@ -1479,7 +1492,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_overrideFlags = 0x20;
     }
 
-    // Address: 0x46a81a8
+    // Address: 0x46a82a8
     internal class CNmFloatSpringNode::CDefinition
     {
         // Fields (2):
@@ -1487,7 +1500,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_conditionNodeIndices = 0x28;
     }
 
-    // Address: 0x46a7be8
+    // Address: 0x46a7ce8
     internal class CNmFloatSwitchNode::CDefinition
     {
         // Fields (2):
@@ -1495,7 +1508,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nEnableNodeIdx = 0xe;
     }
 
-    // Address: 0x46a7148
+    // Address: 0x46a7248
     internal class CNmFootEventConditionNode::CDefinition
     {
         // Fields (8):
@@ -1509,7 +1522,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_blendMode = 0xb;
     }
 
-    // Address: 0x46a8928
+    // Address: 0x46a8a28
     internal class CNmFootIKNode::CDefinition
     {
         // Fields (3):
@@ -1518,7 +1531,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_comparisionOperator = 0xc;
     }
 
-    // Address: 0x46a2be8
+    // Address: 0x46a2ce8
     public class CNmFootIKTask
     {
         // Fields (3):
@@ -1527,7 +1540,7 @@ return libclient_so (0x76ed48800000) {
         public readonly IntPtr m_parameterValueRange = 0x4;
     }
 
-    // Address: 0x46a7048
+    // Address: 0x46a7148
     internal class CNmFootstepEventPercentageThroughNode::CDefinition
     {
         // Fields (3):
@@ -1536,7 +1549,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_layerDefinition = 0x10;
     }
 
-    // Address: 0x46a3848
+    // Address: 0x46a3948
     public class CNmFrameSnapEvent
     {
         // Fields (2):
@@ -1544,7 +1557,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_mode = 0xc;
     }
 
-    // Address: 0x46ac768
+    // Address: 0x46ac868
     public class CNmGraphDefinition
     {
         // Fields (3):
@@ -1553,7 +1566,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flAmplitude = 0x8;
     }
 
-    // Address: 0x46ac4c8
+    // Address: 0x46ac5c8
     internal class CNmGraphDefinition::ReferencedGraphSlot_t
     {
         // Fields (12):
@@ -1571,7 +1584,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_Oscillators = 0x38;
     }
 
-    // Address: 0x46a7348
+    // Address: 0x46a7448
     internal class CNmGraphEventConditionNode::Condition_t
     {
         // Fields (7):
@@ -1584,7 +1597,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_samplingMode = 0x12;
     }
 
-    // Address: 0x46a9c28
+    // Address: 0x46a9d28
     internal class CNmIDBasedClipSelectorNode::CDefinition
     {
         // Fields (7):
@@ -1597,7 +1610,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flChainRotationWeight = 0x24;
     }
 
-    // Address: 0x46a8e28
+    // Address: 0x46a8f28
     internal class CNmIDComparisonNode::CDefinition
     {
         // Fields (3):
@@ -1606,7 +1619,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_transitionDefinitions = 0x8;
     }
 
-    // Address: 0x46a8f28
+    // Address: 0x46a9028
     internal class CNmIDComparisonNode::Comparison_t
     {
         // Fields (4):
@@ -1616,7 +1629,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bCanBeForced = 0x6;
     }
 
-    // Address: 0x46a3968
+    // Address: 0x46a3a68
     public class CNmIDEvent
     {
         // Fields (2):
@@ -1624,7 +1637,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_mode = 0xc;
     }
 
-    // Address: 0x46a7628
+    // Address: 0x46a7728
     internal class CNmIDEventConditionNode::CDefinition
     {
         // Fields (5):
@@ -1635,7 +1648,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bUseFramesAsInput = 0x1c;
     }
 
-    // Address: 0x46a8ac8
+    // Address: 0x46a8bc8
     internal class CNmIDSelectorNode::CDefinition
     {
         // Fields (5):
@@ -1646,7 +1659,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_operator = 0x15;
     }
 
-    // Address: 0x46a8bc8
+    // Address: 0x46a8cc8
     internal class CNmIDSwitchNode::CDefinition
     {
         // Fields (3):
@@ -1655,7 +1668,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flTransitionDurationSeconds = 0x10;
     }
 
-    // Address: 0x46a9088
+    // Address: 0x46a9188
     internal class CNmLayerBlendNode::LayerDefinition_t
     {
         // Fields (4):
@@ -1665,7 +1678,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_translationOffset = 0x20;
     }
 
-    // Address: 0x46a3a48
+    // Address: 0x46a3b48
     public class CNmLegacyEvent
     {
         // Fields (2):
@@ -1673,7 +1686,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_mode = 0xc;
     }
 
-    // Address: 0x46a3b28
+    // Address: 0x46a3c28
     public class CNmMaterialAttributeEvent
     {
         // Fields (2):
@@ -1681,7 +1694,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_mode = 0xc;
     }
 
-    // Address: 0x46a2608
+    // Address: 0x46a2708
     public class CNmModelSpaceBlendTask
     {
         // Fields (2):
@@ -1689,7 +1702,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_ID = 0x20;
     }
 
-    // Address: 0x46a5428
+    // Address: 0x46a5528
     internal class CNmNotNode::CDefinition
     {
         // Fields (2):
@@ -1697,7 +1710,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_eventTypeCondition = 0x8;
     }
 
-    // Address: 0x46a54e8
+    // Address: 0x46a55e8
     internal class CNmOrNode::CDefinition
     {
         // Fields (3):
@@ -1706,7 +1719,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_eventID = 0x10;
     }
 
-    // Address: 0x46a9288
+    // Address: 0x46a9388
     internal class CNmOrientationWarpNode::CDefinition
     {
         // Fields (3):
@@ -1715,7 +1728,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bIsWorldSpaceTarget = 0x10;
     }
 
-    // Address: 0x46a2708
+    // Address: 0x46a2808
     public class CNmOverlayBlendTask
     {
         // Fields (2):
@@ -1723,7 +1736,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_algorithm = 0x19;
     }
 
-    // Address: 0x46a4ba8
+    // Address: 0x46a4ca8
     internal class CNmParameterizedBlendNode::CDefinition
     {
         // Fields (4):
@@ -1733,7 +1746,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_eventConditionRules = 0x20;
     }
 
-    // Address: 0x46a9ea8
+    // Address: 0x46a9fa8
     internal class CNmParameterizedClipSelectorNode::CDefinition
     {
         // Fields (4):
@@ -1743,7 +1756,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_inputValueZNodeIdx = 0x10;
     }
 
-    // Address: 0x46a9fe8
+    // Address: 0x46aa0e8
     internal class CNmParameterizedSelectorNode::CDefinition
     {
         // Fields (2):
@@ -1751,7 +1764,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_desiredInfo = 0xc;
     }
 
-    // Address: 0x46a9468
+    // Address: 0x46a9568
     internal class CNmPassthroughNode::CDefinition
     {
         // Fields (7):
@@ -1764,7 +1777,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_alignmentBoneID = 0x38;
     }
 
-    // Address: 0x46ac388
+    // Address: 0x46ac488
     internal class CNmPoseNode::CDefinition
     {
         // Fields (6):
@@ -1776,7 +1789,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_functionMap = 0x88;
     }
 
-    // Address: 0x46a2fc8
+    // Address: 0x46a30c8
     public class CNmPoseTask
     {
         // Fields (5):
@@ -1787,7 +1800,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bSwitchDynamically = 0x14;
     }
 
-    // Address: 0x46a9668
+    // Address: 0x46a9768
     internal class CNmReferencePoseNode::CDefinition
     {
         // Fields (11):
@@ -1804,7 +1817,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_alignmentBoneID = 0x28;
     }
 
-    // Address: 0x46a2a88
+    // Address: 0x46a2b88
     public class CNmReferencePoseTask
     {
         // Fields (2):
@@ -1812,7 +1825,7 @@ return libclient_so (0x76ed48800000) {
         public readonly IntPtr m_parameterRange = 0x48;
     }
 
-    // Address: 0x46a9868
+    // Address: 0x46a9968
     internal class CNmReferencedGraphNode::CDefinition
     {
         // Fields (5):
@@ -1823,7 +1836,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_graphEvents = 0x18;
     }
 
-    // Address: 0x46a1aa8
+    // Address: 0x46a1ba8
     internal class CNmRootMotionData::SamplingMode_t
     {
         // Fields (2):
@@ -1831,7 +1844,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_secondaryID = 0x20;
     }
 
-    // Address: 0x46a9ae8
+    // Address: 0x46a9be8
     internal class CNmRootMotionOverrideNode::OverrideFlags_t
     {
         // Fields (11):
@@ -1848,7 +1861,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_rootMotionBlend = 0x27;
     }
 
-    // Address: 0x46a2de8
+    // Address: 0x46a2ee8
     public class CNmSampleTask
     {
         // Fields (7):
@@ -1861,7 +1874,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bAllowLooping = 0xc4;
     }
 
-    // Address: 0x46a1b08
+    // Address: 0x46a1c08
     internal class CNmSkeleton::ContactConfig_t
     {
         // Fields (2):
@@ -1869,7 +1882,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_KV = 0x20;
     }
 
-    // Address: 0x46a1c48
+    // Address: 0x46a1d48
     internal class CNmSkeleton::SecondarySkeleton_t
     {
         // Fields (7):
@@ -1882,7 +1895,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_w = 0xf0;
     }
 
-    // Address: 0x46aa5a8
+    // Address: 0x46aa6a8
     internal class CNmStateNode::CDefinition
     {
         // Fields (2):
@@ -1890,7 +1903,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_dataSlotIdx = 0x2;
     }
 
-    // Address: 0x46aa7a8
+    // Address: 0x46aa8a8
     internal class CNmStateNode::TimedEvent_t
     {
         // Fields (2):
@@ -1898,7 +1911,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_slotID = 0x8;
     }
 
-    // Address: 0x46aa8a8
+    // Address: 0x46aa9a8
     internal class CNmStateNode::TimedEvent_t::Comparison_t
     {
         // Fields (14):
@@ -1918,7 +1931,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_resources = 0x168;
     }
 
-    // Address: 0x46a2068
+    // Address: 0x46a2168
     internal class CNmSyncTrack::EventMarker_t
     {
         // Fields (14):
@@ -1938,7 +1951,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_effectForConfig = 0x68;
     }
 
-    // Address: 0x46a1f68
+    // Address: 0x46a2068
     internal class CNmSyncTrack::Event_t
     {
         // Fields (2):
@@ -1946,7 +1959,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_attributeName = 0x20;
     }
 
-    // Address: 0x46a23e8
+    // Address: 0x46a24e8
     public class CNmTarget
     {
         // Fields (7):
@@ -1959,7 +1972,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flDurationInterruptionThreshold = 0x44;
     }
 
-    // Address: 0x46ac088
+    // Address: 0x46ac188
     internal class CNmTargetValueNode::CDefinition
     {
         // Fields (3):
@@ -1968,7 +1981,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flValue = 0xc;
     }
 
-    // Address: 0x46a6ba8
+    // Address: 0x46a6ca8
     internal class CNmTransitionEventConditionNode::CDefinition
     {
         // Fields (3):
@@ -1977,7 +1990,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_defaultValue = 0x58;
     }
 
-    // Address: 0x46ab908
+    // Address: 0x46aba08
     internal class CNmTransitionNode::CDefinition
     {
         // Fields (2):
@@ -1985,7 +1998,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_vMaxBounds = 0xc;
     }
 
-    // Address: 0x46abb08
+    // Address: 0x46abc08
     internal class CNmTransitionNode::TransitionOptions_t
     {
         // Fields (2):
@@ -1993,7 +2006,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nPackedMax = 0x4;
     }
 
-    // Address: 0x46a2ee8
+    // Address: 0x46a2fe8
     public class CNmTwoBoneIKTask
     {
         // Fields (2):
@@ -2001,7 +2014,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_event = 0x10;
     }
 
-    // Address: 0x46abec8
+    // Address: 0x46abfc8
     internal class CNmVectorInfoNode::CDefinition
     {
         // Fields (5):
@@ -2012,7 +2025,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bIsPure = 0x1a;
     }
 
-    // Address: 0x46abfa8
+    // Address: 0x46ac0a8
     internal class CNmVectorInfoNode::Info_t
     {
         // Fields (6):
@@ -2024,7 +2037,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_eAccess = 0x10;
     }
 
-    // Address: 0x46abce8
+    // Address: 0x46abde8
     internal class CNmVectorNegateNode::CDefinition
     {
         // Fields (4):
@@ -2034,7 +2047,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nMaxTempVarsUsed = 0x48;
     }
 
-    // Address: 0x46a66a8
+    // Address: 0x46a67a8
     internal class CNmVirtualParameterBoolNode::CDefinition
     {
         // Fields (2):
@@ -2042,7 +2055,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flEnd = 0x4;
     }
 
-    // Address: 0x46a6528
+    // Address: 0x46a6628
     internal class CNmVirtualParameterFloatNode::CDefinition
     {
         // Fields (2):
@@ -2050,7 +2063,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_clampRange = 0xc;
     }
 
-    // Address: 0x46a65e8
+    // Address: 0x46a66e8
     internal class CNmVirtualParameterIDNode::CDefinition
     {
         // Fields (3):
@@ -2059,7 +2072,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_outputRange = 0x14;
     }
 
-    // Address: 0x46a63a8
+    // Address: 0x46a64a8
     internal class CNmVirtualParameterTargetNode::CDefinition
     {
         // Fields (5):
@@ -2070,7 +2083,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bUseStartValue = 0x17;
     }
 
-    // Address: 0x46b7be0
+    // Address: 0x46b7ce0
     internal class CParticleCollectionBindingInstance::HACK_UnusedBinding
     {
         // Fields (8):
@@ -2084,7 +2097,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bExposeExternally = 0x118;
     }
 
-    // Address: 0x467b630
+    // Address: 0x467b730
     external class CParticleSystem_API::SetDataControlPointZ
     {
         // Fields (33):
@@ -2123,7 +2136,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_aShootSounds = 0x4f8;
     }
 
-    // Address: 0x467aca0
+    // Address: 0x467ada0
     external class CPathParticleRope_API::SetSlack
     {
         // Fields (5):
@@ -2134,7 +2147,7 @@ return libclient_so (0x76ed48800000) {
         public readonly Vector3 m_vecLandmarkAngles = 0x20;
     }
 
-    // Address: 0x467a7d0
+    // Address: 0x467a8d0
     public class CPathWithDynamicNodes
     {
         // Fields (20):
@@ -2160,7 +2173,7 @@ return libclient_so (0x76ed48800000) {
         public readonly QAngle m_angDemoViewAngles = 0x208;
     }
 
-    // Address: 0x4647768
+    // Address: 0x4647868
     public class CPhysicsBodyGameMarkupData
     {
         // Fields (25):
@@ -2191,7 +2204,7 @@ return libclient_so (0x76ed48800000) {
         public readonly Vector3 m_vecCachedRenderMaxs = 0x1410;
     }
 
-    // Address: 0x46619a0
+    // Address: 0x4661aa0
     public class CPlainAutoPtr
     {
         // Fields (4):
@@ -2201,7 +2214,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flTickStartTime = 0x30;
     }
 
-    // Address: 0x467ce10
+    // Address: 0x467cf10
     public class CPlayerPawnComponent
     {
         // Fields (9):
@@ -2216,7 +2229,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_lookupFilename = 0x1128;
     }
 
-    // Address: 0x4637400
+    // Address: 0x4637500
     external class CPlayerVisibility_API::Enable
     {
         // Fields (4):
@@ -2226,7 +2239,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flFarBlurryDistance = 0xc;
     }
 
-    // Address: 0x467c390
+    // Address: 0x467c490
     public class CPlayer_ItemServices
     {
         // Fields (43):
@@ -2275,7 +2288,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_hEnvSky = 0x4bc;
     }
 
-    // Address: 0x467bc88
+    // Address: 0x467bd88
     public class CPlayer_ObserverServices
     {
         // Fields (8):
@@ -2289,7 +2302,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flStartFrame = 0x1054;
     }
 
-    // Address: 0x46396c0
+    // Address: 0x46397c0
     external class CPointCamera_API::EnableDOF
     {
         // Fields (2):
@@ -2297,7 +2310,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_vMaxs = 0x844;
     }
 
-    // Address: 0x4639800
+    // Address: 0x4639900
     external class CPointCamera_API::SetDOFFarCrisp
     {
         // Fields (15):
@@ -2318,7 +2331,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nEntityIndexSelection = 0x830;
     }
 
-    // Address: 0x46395d0
+    // Address: 0x46396d0
     external class CPointCamera_API::SetOff
     {
         // Fields (2):
@@ -2326,7 +2339,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_vMaxs = 0x844;
     }
 
-    // Address: 0x4638c88
+    // Address: 0x4638d88
     public class CPointChildModifier
     {
         // Fields (4):
@@ -2336,7 +2349,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_FanForceCurveString = 0x7d0;
     }
 
-    // Address: 0x4638ad0
+    // Address: 0x4638bd0
     public class CPointOrient
     {
         // Fields (9):
@@ -2351,7 +2364,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_RampTimer = 0x1150;
     }
 
-    // Address: 0x4638690
+    // Address: 0x4638790
     public class CPointTemplate
     {
         // Fields (3):
@@ -2360,7 +2373,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bEnabled = 0x790;
     }
 
-    // Address: 0x463c640
+    // Address: 0x463c740
     public class CPropDataManifest_global_client
     {
         // Fields (2):
@@ -2368,7 +2381,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flFadeEndDist = 0x780;
     }
 
-    // Address: 0x46af808
+    // Address: 0x46af908
     public class CPulseBreakpointLocation
     {
         // Fields (13):
@@ -2387,7 +2400,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nTempVarIdx = 0x26;
     }
 
-    // Address: 0x46b3828
+    // Address: 0x46b3928
     public class CPulseCell_BaseLerp
     {
         // Fields (3):
@@ -2396,7 +2409,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_OnFinished = 0xf8;
     }
 
-    // Address: 0x46b36a8
+    // Address: 0x46b37a8
     public class CPulseCell_BaseValue
     {
         // Fields (2):
@@ -2404,7 +2417,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_EventOutflow = 0x8;
     }
 
-    // Address: 0x46b3930
+    // Address: 0x46b3a30
     internal class CPulseCell_BaseYieldingInflow::BaseFlow_WakeImmediately
     {
         // Fields (3):
@@ -2413,7 +2426,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_WhenFalse = 0x1b0;
     }
 
-    // Address: 0x46b3b68
+    // Address: 0x46b3c68
     public class CPulseCell_Inflow_ObservableVariableListener
     {
         // Fields (2):
@@ -2421,7 +2434,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_OnTrue = 0x168;
     }
 
-    // Address: 0x46b34c8
+    // Address: 0x46b35c8
     public class CPulseCell_Inflow_Yield
     {
         // Fields (4):
@@ -2431,7 +2444,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nCursorStateBlockIndex = 0x68;
     }
 
-    // Address: 0x46b4da0
+    // Address: 0x46b4ea0
     internal class CPulseCell_InlineNodeSkipSelector::ProcessSelector
     {
         // Fields (7):
@@ -2444,7 +2457,7 @@ return libclient_so (0x76ed48800000) {
         public readonly IntPtr m_pBaseClassComponentHelper = 0x58;
     }
 
-    // Address: 0x46b4ae0
+    // Address: 0x46b4be0
     internal class CPulseCell_IntervalTimer::OnInterval
     {
         // Fields (2):
@@ -2452,7 +2465,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_Names = 0x28;
     }
 
-    // Address: 0x46b4fc0
+    // Address: 0x46b50c0
     internal class CPulseCell_IsRequirementValid::CheckRequirement
     {
         // Fields (12):
@@ -2470,7 +2483,7 @@ return libclient_so (0x76ed48800000) {
         public readonly IntPtr m_pNextByClass = 0x68;
     }
 
-    // Address: 0x4639128
+    // Address: 0x4639228
     internal class CPulseCell_LerpCameraSettings::CursorState_t
     {
         // Fields (4):
@@ -2480,7 +2493,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_szTeamname = 0x7b4;
     }
 
-    // Address: 0x46b5188
+    // Address: 0x46b5288
     internal class CPulseCell_LimitCount::Criteria_t
     {
         // Fields (3):
@@ -2489,7 +2502,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_CScriptComponent = 0x28;
     }
 
-    // Address: 0x46b2f00
+    // Address: 0x46b3000
     internal class CPulseCell_Outflow_CycleShuffled::Run
     {
         // Fields (4):
@@ -2499,7 +2512,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_FailOutflow = 0x68;
     }
 
-    // Address: 0x46b4c40
+    // Address: 0x46b4d40
     internal class CPulseCell_PickBestOutflowSelector::ProcessSelector
     {
         // Fields (4):
@@ -2509,7 +2522,7 @@ return libclient_so (0x76ed48800000) {
         public readonly IntPtr m_pNext = 0x20;
     }
 
-    // Address: 0x46b3f28
+    // Address: 0x46b4028
     public class CPulseCell_ReturnValues
     {
         // Fields (2):
@@ -2517,7 +2530,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_WaitComplete = 0xe0;
     }
 
-    // Address: 0x46b3ec0
+    // Address: 0x46b3fc0
     internal class CPulseCell_ReturnValues::HandleReturnValues
     {
         // Fields (2):
@@ -2525,7 +2538,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nDesiredKillPriority = 0x12c;
     }
 
-    // Address: 0x46b29e8
+    // Address: 0x46b2ae8
     public class CPulseCell_Step_CallExternalMethod
     {
         // Fields (5):
@@ -2536,7 +2549,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bCompleteOnNextWake = 0x10;
     }
 
-    // Address: 0x46b28e8
+    // Address: 0x46b29e8
     public class CPulseCell_Unknown
     {
         // Fields (2):
@@ -2544,7 +2557,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_OnFinished = 0xf0;
     }
 
-    // Address: 0x46b2c20
+    // Address: 0x46b2d20
     internal class CPulseCell_Value_RandomFloat::Eval
     {
         // Fields (2):
@@ -2552,7 +2565,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_OnInterval = 0x120;
     }
 
-    // Address: 0x46b2d20
+    // Address: 0x46b2e20
     internal class CPulseCell_Value_RandomInt::Eval
     {
         // Fields (2):
@@ -2560,7 +2573,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_OutflowList = 0x50;
     }
 
-    // Address: 0x46b5d40
+    // Address: 0x46b5e40
     internal class CPulseCell_WaitForCursorsWithTag::Wait
     {
         // Fields (17):
@@ -2583,7 +2596,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_RefCount = 0xd0;
     }
 
-    // Address: 0x46af508
+    // Address: 0x46af608
     public class CPulseExecCursor
     {
         // Fields (2):
@@ -2591,7 +2604,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_Connection = 0x8;
     }
 
-    // Address: 0x46b0f00
+    // Address: 0x46b1000
     internal class CPulseStringlib::StringsAreEqualCaseSensitive
     {
         // Fields (5):
@@ -2602,7 +2615,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_OnFinished = 0x108;
     }
 
-    // Address: 0x46af928
+    // Address: 0x46afa28
     public class CPulse_CallInfo
     {
         // Fields (3):
@@ -2611,7 +2624,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_Outparams = 0x20;
     }
 
-    // Address: 0x463c3b0
+    // Address: 0x463c4b0
     public class CRagdollManager
     {
         // Fields (15):
@@ -2632,7 +2645,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_hEntOwner = 0x3c;
     }
 
-    // Address: 0x46b77c8
+    // Address: 0x46b78c8
     public class CRangeInt
     {
         // Fields (4):
@@ -2642,7 +2655,7 @@ return libclient_so (0x76ed48800000) {
         public readonly Vector3 m_vecGeneratedTextures = 0x80;
     }
 
-    // Address: 0x4643a48
+    // Address: 0x4643b48
     public class CRemapFloat
     {
         // Fields (82):
@@ -2730,7 +2743,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nBloodType = 0x778;
     }
 
-    // Address: 0x4661bc8
+    // Address: 0x4661cc8
     public class CResponseCriteriaSet
     {
         // Fields (8):
@@ -2744,7 +2757,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flTickRemainder = 0x58;
     }
 
-    // Address: 0x464e428
+    // Address: 0x464e528
     public class CRopeOverlapHit
     {
         // Fields (2):
@@ -2752,7 +2765,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_hSkyCamera = 0x780;
     }
 
-    // Address: 0x46433e0
+    // Address: 0x46434e0
     public class CS2CharacterDecalRendererManifest
     {
         // Fields (14):
@@ -2772,7 +2785,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flScaleTimeEnd = 0x1260;
     }
 
-    // Address: 0x468ba40
+    // Address: 0x468bb40
     public class CS2Hud_client
     {
         // Fields (2):
@@ -2780,7 +2793,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nType = 0x103c;
     }
 
-    // Address: 0x466ac08
+    // Address: 0x466ad08
     public class CSPerRoundStats_t
     {
         // Fields (3):
@@ -2789,7 +2802,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flTimeParticleEffectSpawn = 0x12f8;
     }
 
-    // Address: 0x466b208
+    // Address: 0x466b308
     public class CSPlayerBlockingUseAction_t
     {
         // Fields (7):
@@ -2802,7 +2815,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flSpawnTime = 0x1270;
     }
 
-    // Address: 0x4682f60
+    // Address: 0x4683060
     public class CSPlayerManifest_global_client
     {
         // Fields (9):
@@ -2817,7 +2830,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flCurrentConveyorSpeed = 0x1064;
     }
 
-    // Address: 0x4669ce8
+    // Address: 0x4669de8
     public class CSWeaponNameID
     {
         // Fields (2):
@@ -2825,7 +2838,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flFluidDensity = 0x1220;
     }
 
-    // Address: 0x46424a8
+    // Address: 0x46425a8
     public class CSceneEventInfo
     {
         // Fields (23):
@@ -2854,7 +2867,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_averageError = 0x12dc;
     }
 
-    // Address: 0x46435e8
+    // Address: 0x46436e8
     public class CScriptUniformRandomStream
     {
         // Fields (10):
@@ -2870,7 +2883,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_ServerViewAngleChanges = 0x12c8;
     }
 
-    // Address: 0x4641028
+    // Address: 0x4641128
     public class CSimTimer
     {
         // Fields (28):
@@ -2904,7 +2917,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bDoDecalLightmapping = 0xff;
     }
 
-    // Address: 0x463bc50
+    // Address: 0x463bd50
     external class CSoundEventEntity_API::UnPauseSound
     {
         // Fields (13):
@@ -2923,7 +2936,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_SurfacePropStringToken = 0x78;
     }
 
-    // Address: 0x463f7c8
+    // Address: 0x463f8c8
     public class CTakeDamageInfo
     {
         // Fields (5):
@@ -2934,7 +2947,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nLastThinkTick = 0x20;
     }
 
-    // Address: 0x4682270
+    // Address: 0x4682370
     internal class CTakeDamageResultAPI::GetPreModifiedDamage
     {
         // Fields (14):
@@ -2954,7 +2967,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flDofTiltToGround = 0x800;
     }
 
-    // Address: 0x464f2c8
+    // Address: 0x464f3c8
     public class CTimeline
     {
         // Fields (6):
@@ -2966,7 +2979,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_hPath = 0x7d0;
     }
 
-    // Address: 0x4636e10
+    // Address: 0x4636f10
     external class CTonemapController2_API::SetMaxExposure
     {
         // Fields (26):
@@ -2998,7 +3011,7 @@ return libclient_so (0x76ed48800000) {
         public readonly IntPtr m_pNext = 0x7d8;
     }
 
-    // Address: 0x463a9e8
+    // Address: 0x463aae8
     public class CTriggerFan
     {
         // Fields (12):
@@ -3016,7 +3029,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bExposureControl = 0x1145;
     }
 
-    // Address: 0x4661920
+    // Address: 0x4661a20
     public class CUtlStringMap
     {
         // Fields (10):
@@ -3032,7 +3045,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_recipientFilter = 0x1b4;
     }
 
-    // Address: 0x464f868
+    // Address: 0x464f968
     public class CVectorMovingAverage
     {
         // Fields (16):
@@ -3054,7 +3067,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_PathNodes_RadiusScale = 0x848;
     }
 
-    // Address: 0x4682050
+    // Address: 0x4682150
     internal class CViewRender::Render
     {
         // Fields (6):
@@ -3066,7 +3079,7 @@ return libclient_so (0x76ed48800000) {
         public readonly Vector3 m_vecStartPos = 0x1230;
     }
 
-    // Address: 0x46464a8
+    // Address: 0x46465a8
     public class C_BaseDoor
     {
         // Fields (32):
@@ -3104,7 +3117,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nPrevAnimationAlgorithm = 0x6a9;
     }
 
-    // Address: 0x467edf0
+    // Address: 0x467eef0
     public class C_BaseEntity
     {
         // Fields (19):
@@ -3129,7 +3142,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nReorientMode = 0x12f4;
     }
 
-    // Address: 0x4646f48
+    // Address: 0x4647048
     internal class C_BaseModelEntity::Emphasized_Phoneme
     {
         // Fields (9):
@@ -3144,7 +3157,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flDepthSortBias = 0x103c;
     }
 
-    // Address: 0x464ca68
+    // Address: 0x464cb68
     public class C_BasePropDoor
     {
         // Fields (3):
@@ -3153,7 +3166,7 @@ return libclient_so (0x76ed48800000) {
         public readonly Vector3 m_vecZ = 0x20;
     }
 
-    // Address: 0x46351c8
+    // Address: 0x46352c8
     public class C_BaseTrigger
     {
         // Fields (12):
@@ -3171,7 +3184,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bEnabled = 0x1054;
     }
 
-    // Address: 0x463ee90
+    // Address: 0x463ef90
     public class C_Beam
     {
         // Fields (2):
@@ -3179,7 +3192,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flMaxInterval = 0x10;
     }
 
-    // Address: 0x4648ce8
+    // Address: 0x4648de8
     public class C_BreakableProp
     {
         // Fields (5):
@@ -3190,7 +3203,7 @@ return libclient_so (0x76ed48800000) {
         static readonly int s_last_task_end_location = 0x38;
     }
 
-    // Address: 0x4683d68
+    // Address: 0x4683e68
     public class C_BulletHitModel
     {
         // Fields (10):
@@ -3206,7 +3219,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_szTeamLogoImage = 0xadc;
     }
 
-    // Address: 0x4671510
+    // Address: 0x4671610
     public class C_C4
     {
         // Fields (13):
@@ -3225,7 +3238,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bHasActionCompletedEvent = 0x1e8;
     }
 
-    // Address: 0x468d708
+    // Address: 0x468d808
     public class C_CS2HudModelWeapon
     {
         // Fields (2):
@@ -3233,7 +3246,7 @@ return libclient_so (0x76ed48800000) {
         public readonly IntPtr m_pManager = 0x70;
     }
 
-    // Address: 0x4686210
+    // Address: 0x4686310
     public class C_CSGO_PreviewModel
     {
         // Fields (24):
@@ -3263,7 +3276,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flLastGrassBurnThink = 0x861c;
     }
 
-    // Address: 0x466a328
+    // Address: 0x466a428
     public class C_CSGO_TeamIntroCharacterPosition
     {
         // Fields (14):
@@ -3283,7 +3296,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_hSwitchToWeaponAfterThrow = 0x2e44;
     }
 
-    // Address: 0x4685868
+    // Address: 0x4685968
     public class C_CSGO_TeamSelectCamera
     {
         // Fields (15):
@@ -3304,7 +3317,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flEnvWetnessDryingAmount = 0x7a8;
     }
 
-    // Address: 0x466a9e8
+    // Address: 0x466aae8
     public class C_CSGO_TeamSelectCounterTerroristPosition
     {
         // Fields (2):
@@ -3312,7 +3325,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_KillingPlayer = 0x28ac;
     }
 
-    // Address: 0x4669788
+    // Address: 0x4669888
     public class C_CSGameRulesProxy
     {
         // Fields (13):
@@ -3331,7 +3344,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_iEnemiesFlashed = 0x60;
     }
 
-    // Address: 0x4684188
+    // Address: 0x4684288
     public class C_CSObserverPawn
     {
         // Fields (4):
@@ -3341,7 +3354,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_sInitialWeaponState = 0x1200;
     }
 
-    // Address: 0x4685e68
+    // Address: 0x4685f68
     public class C_CSTeam
     {
         // Fields (16):
@@ -3363,7 +3376,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bCT = 0x228;
     }
 
-    // Address: 0x466fad0
+    // Address: 0x466fbd0
     public class C_CSWeaponBase
     {
         // Fields (2):
@@ -3371,7 +3384,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nLastAttackTick = 0x2dd0;
     }
 
-    // Address: 0x46452c8
+    // Address: 0x46453c8
     public class C_ClientRagdoll
     {
         // Fields (47):
@@ -3424,7 +3437,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bvDisabledHitGroups = 0x1010;
     }
 
-    // Address: 0x46458a8
+    // Address: 0x46459a8
     public class C_ColorCorrection
     {
         // Fields (2):
@@ -3432,7 +3445,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_Tag = 0x8;
     }
 
-    // Address: 0x467eca8
+    // Address: 0x467eda8
     public class C_ColorCorrectionVolume
     {
         // Fields (7):
@@ -3445,7 +3458,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bHasParent = 0x12a8;
     }
 
-    // Address: 0x4677d48
+    // Address: 0x4677e48
     public class C_CommandContext
     {
         // Fields (6):
@@ -3457,7 +3470,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flMaxAngleBetweenNormalAndGravity = 0x1c;
     }
 
-    // Address: 0x4685310
+    // Address: 0x4685410
     public class C_CsmFovOverride
     {
         // Fields (29):
@@ -3492,7 +3505,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flC4ExplodeSpectateDuration = 0x27c0;
     }
 
-    // Address: 0x4679310
+    // Address: 0x4679410
     public class C_DynamicProp
     {
         // Fields (5):
@@ -3503,7 +3516,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_hTextureOverride = 0x1600;
     }
 
-    // Address: 0x464d1e8
+    // Address: 0x464d2e8
     internal class C_DynamicPropAlias_dynamic_prop
     {
         // Fields (5):
@@ -3514,7 +3527,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_DecalType = 0xf8;
     }
 
-    // Address: 0x4634d10
+    // Address: 0x4634e10
     public class C_EnvCombinedLightProbeVolume
     {
         // Fields (5):
@@ -3525,7 +3538,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flTonemapEVSmoothingRange = 0x78c;
     }
 
-    // Address: 0x4634490
+    // Address: 0x4634590
     public class C_EnvCubemap
     {
         // Fields (36):
@@ -3567,7 +3580,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bFirstTime = 0x828;
     }
 
-    // Address: 0x463e528
+    // Address: 0x463e628
     public class C_EnvDetailController
     {
         // Fields (3):
@@ -3576,7 +3589,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_slotPlayerExcludedDueToPrediction = 0x30;
     }
 
-    // Address: 0x467b110
+    // Address: 0x467b210
     public class C_EnvParticleGlow
     {
         // Fields (4):
@@ -3586,7 +3599,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_iAmmo = 0x68;
     }
 
-    // Address: 0x4637250
+    // Address: 0x4637350
     public class C_EnvSky
     {
         // Fields (3):
@@ -3595,7 +3608,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_OverlaidEnd = 0x1c;
     }
 
-    // Address: 0x46368b0
+    // Address: 0x46369b0
     public class C_EnvVolumetricFogController
     {
         // Fields (12):
@@ -3613,7 +3626,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_OnEntitySpawned = 0x7e8;
     }
 
-    // Address: 0x46362b0
+    // Address: 0x46363b0
     public class C_EnvVolumetricFogVolume
     {
         // Fields (24):
@@ -3643,7 +3656,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bFirstTime = 0x879;
     }
 
-    // Address: 0x463e2a8
+    // Address: 0x463e3a8
     public class C_EnvWindShared
     {
         // Fields (4):
@@ -3653,7 +3666,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_forceupdate = 0xc;
     }
 
-    // Address: 0x4644788
+    // Address: 0x4644888
     public class C_Fish
     {
         // Fields (6):
@@ -3665,7 +3678,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flWaterNextTraceTime = 0x1214;
     }
 
-    // Address: 0x4675c50
+    // Address: 0x4675d50
     public class C_FootstepControl
     {
         // Fields (17):
@@ -3688,7 +3701,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_iDesiredFOV = 0x914;
     }
 
-    // Address: 0x464d068
+    // Address: 0x464d168
     public class C_FuncBrush
     {
         // Fields (13):
@@ -3707,7 +3720,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_textureName = 0x60;
     }
 
-    // Address: 0x4680730
+    // Address: 0x4680830
     public class C_FuncLadder
     {
         // Fields (8):
@@ -3721,7 +3734,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nAABBDirection = 0x7e0;
     }
 
-    // Address: 0x464cec8
+    // Address: 0x464cfc8
     public class C_FuncRotating
     {
         // Fields (5):
@@ -3732,7 +3745,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nInterpType = 0x10;
     }
 
-    // Address: 0x4672370
+    // Address: 0x4672470
     public class C_HEGrenade
     {
         // Fields (4):
@@ -3742,7 +3755,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_vClientScopeInaccuracy = 0x2c8;
     }
 
-    // Address: 0x4684b68
+    // Address: 0x4684c68
     public class C_HostageCarriableProp
     {
         // Fields (17):
@@ -3765,7 +3778,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bDisabledHud = 0x10c0;
     }
 
-    // Address: 0x463e1a8
+    // Address: 0x463e2a8
     public class C_InfoLadderDismount
     {
         // Fields (13):
@@ -3784,7 +3797,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_iszClassName = 0xa8;
     }
 
-    // Address: 0x463a4b0
+    // Address: 0x463a5b0
     public class C_InfoVisibilityBox
     {
         // Fields (10):
@@ -3800,7 +3813,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nMotionDisabledSpawnFlag = 0x3c;
     }
 
-    // Address: 0x46718e8
+    // Address: 0x46719e8
     public class C_KeychainModule
     {
         // Fields (70):
@@ -3876,7 +3889,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bFireBulletsSeedSynchronized = 0xafc;
     }
 
-    // Address: 0x4686ca8
+    // Address: 0x4686da8
     public class C_MapVetoPickController
     {
         // Fields (3):
@@ -3885,7 +3898,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bShowLight = 0x1338;
     }
 
-    // Address: 0x463d728
+    // Address: 0x463d828
     public class C_MultiplayRules
     {
         // Fields (15):
@@ -3906,7 +3919,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nOverrideFlinchHitGroup = 0x54;
     }
 
-    // Address: 0x4671068
+    // Address: 0x4671168
     public class C_NametagModule
     {
         // Fields (2):
@@ -3914,7 +3927,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nCount = 0x32;
     }
 
-    // Address: 0x464cd48
+    // Address: 0x464ce48
     public class C_PhysBox
     {
         // Fields (7):
@@ -3927,7 +3940,7 @@ return libclient_so (0x76ed48800000) {
         public readonly Vector3 m_vecZ = 0x28;
     }
 
-    // Address: 0x466ba88
+    // Address: 0x466bb88
     public class C_PhysicsPropMultiplayer
     {
         // Fields (7):
@@ -3940,7 +3953,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nRevolverCylinderIdx = 0x2dc8;
     }
 
-    // Address: 0x46373f0
+    // Address: 0x46374f0
     public class C_PlayerVisibility
     {
         // Fields (3):
@@ -3949,7 +3962,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_End = 0x134;
     }
 
-    // Address: 0x46394b0
+    // Address: 0x46395b0
     public class C_PointCameraVFOV
     {
         // Fields (5):
@@ -3960,7 +3973,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_iszParameterName = 0x848;
     }
 
-    // Address: 0x4632ab0
+    // Address: 0x4632bb0
     public class C_PointClientUIHUD
     {
         // Fields (27):
@@ -3993,7 +4006,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_Entity_bEnabled = 0x951;
     }
 
-    // Address: 0x46327f0
+    // Address: 0x46328f0
     public class C_PointClientUIWorldPanel
     {
         // Fields (18):
@@ -4017,7 +4030,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_Entity_bEnabled = 0x860;
     }
 
-    // Address: 0x46320d0
+    // Address: 0x46321d0
     public class C_PointClientUIWorldTextPanel
     {
         // Fields (6):
@@ -4029,7 +4042,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flAllowResponsesEndTime = 0x74;
     }
 
-    // Address: 0x467f668
+    // Address: 0x467f768
     public class C_PointCommentaryNode
     {
         // Fields (25):
@@ -4060,7 +4073,7 @@ return libclient_so (0x76ed48800000) {
         public readonly Vector3 m_vecPreviousTestPoint = 0x7e4;
     }
 
-    // Address: 0x4686e10
+    // Address: 0x4686f10
     public class C_PointDeathcamBounds
     {
         // Fields (76):
@@ -4142,7 +4155,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_VisClusters = 0x1310;
     }
 
-    // Address: 0x46810f0
+    // Address: 0x46811f0
     public class C_PointWorldText
     {
         // Fields (104):
@@ -4252,7 +4265,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_holdTargetIDTimer = 0x4598;
     }
 
-    // Address: 0x463c8a8
+    // Address: 0x463c9a8
     public class C_PostProcessingVolume
     {
         // Fields (20):
@@ -4278,7 +4291,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_iEffectName = 0x6c;
     }
 
-    // Address: 0x4644cc8
+    // Address: 0x4644dc8
     public class C_PrecipitationBlocker
     {
         // Fields (4):
@@ -4288,7 +4301,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_mPreferredCatchTransform = 0x1200;
     }
 
-    // Address: 0x464cbe8
+    // Address: 0x464cce8
     public class C_PropDoorRotating
     {
         // Fields (7):
@@ -4301,7 +4314,7 @@ return libclient_so (0x76ed48800000) {
         public readonly Vector3 m_vecZ = 0x28;
     }
 
-    // Address: 0x4680c08
+    // Address: 0x4680d08
     public class C_RagdollPropAttached
     {
         // Fields (26):
@@ -4333,7 +4346,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_hOriginalController = 0x14e8;
     }
 
-    // Address: 0x464c9a8
+    // Address: 0x464caa8
     public class C_RopeKeyframe
     {
         // Fields (7):
@@ -4346,7 +4359,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flSaveTime = 0x50;
     }
 
-    // Address: 0x464c388
+    // Address: 0x464c488
     internal class C_RopeKeyframe::CPhysicsDelegate
     {
         // Fields (2):
@@ -4354,7 +4367,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_name = 0xc;
     }
 
-    // Address: 0x463dfc8
+    // Address: 0x463e0c8
     public class C_ShatterGlassShardPhysics
     {
         // Fields (24):
@@ -4384,7 +4397,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flSpeed = 0x1098;
     }
 
-    // Address: 0x463c0e8
+    // Address: 0x463c1e8
     public class C_SoundAreaEntityBase
     {
         // Fields (9):
@@ -4399,7 +4412,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bHasSlack = 0x1072;
     }
 
-    // Address: 0x463b608
+    // Address: 0x463b708
     public class C_SoundEventAABBEntity
     {
         // Fields (2):
@@ -4407,7 +4420,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bPadding = 0x67;
     }
 
-    // Address: 0x463b9b0
+    // Address: 0x463bab0
     public class C_SoundEventBoxHelper
     {
         // Fields (11):
@@ -4424,7 +4437,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bGlowing = 0x51;
     }
 
-    // Address: 0x463ba30
+    // Address: 0x463bb30
     public class C_SoundEventConeEntity
     {
         // Fields (4):
@@ -4434,7 +4447,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bGamePaused = 0x38;
     }
 
-    // Address: 0x463b0e8
+    // Address: 0x463b1e8
     public class C_SoundEventMultiPointEntity
     {
         // Fields (14):
@@ -4454,7 +4467,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flNewFarZ = 0x3c;
     }
 
-    // Address: 0x4640588
+    // Address: 0x4640688
     public class C_SoundOpvarSetAutoRoomEntity
     {
         // Fields (20):
@@ -4480,7 +4493,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bStarted = 0x75;
     }
 
-    // Address: 0x4640888
+    // Address: 0x4640988
     public class C_SoundOpvarSetPointBase
     {
         // Fields (3):
@@ -4489,7 +4502,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bSetFromDebugHistory = 0x24;
     }
 
-    // Address: 0x4640b88
+    // Address: 0x4640c88
     public class C_SoundOpvarSetPointEntity
     {
         // Fields (2):
@@ -4497,7 +4510,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nHeight = 0x28;
     }
 
-    // Address: 0x463ae90
+    // Address: 0x463af90
     public class C_Team
     {
         // Fields (5):
@@ -4508,7 +4521,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_vPos = 0x24;
     }
 
-    // Address: 0x467dd90
+    // Address: 0x467de90
     public class C_TextureBasedAnimatable
     {
         // Fields (8):
@@ -4522,7 +4535,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bDraw3DSkybox = 0x103d;
     }
 
-    // Address: 0x464bb08
+    // Address: 0x464bc08
     public class C_TriggerPhysics
     {
         // Fields (10):
@@ -4538,7 +4551,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bHull_Small = 0x9;
     }
 
-    // Address: 0x4680108
+    // Address: 0x4680208
     public class C_WaterBullet
     {
         // Fields (2):
@@ -4546,7 +4559,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bSendHandle = 0x780;
     }
 
-    // Address: 0x46725d0
+    // Address: 0x46726d0
     public class C_WeaponElite
     {
         // Fields (6):
@@ -4558,7 +4571,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flLastShotFOV = 0x2b4;
     }
 
-    // Address: 0x466db88
+    // Address: 0x466dc88
     public class C_WeaponM249
     {
         // Fields (57):
@@ -4621,7 +4634,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flLastShakeTime = 0x2bfc;
     }
 
-    // Address: 0x466e388
+    // Address: 0x466e488
     public class C_WeaponUSPSilencer
     {
         // Fields (83):
@@ -4710,7 +4723,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_szAnimClass = 0x868;
     }
 
-    // Address: 0x467d4c8
+    // Address: 0x467d5c8
     public class C_World
     {
         // Fields (2):
@@ -4718,7 +4731,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_Radius = 0x1024;
     }
 
-    // Address: 0x463d048
+    // Address: 0x463d148
     public class C_fogplayerparams_t
     {
         // Fields (23):
@@ -4747,7 +4760,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_hEndEntity = 0x10d4;
     }
 
-    // Address: 0x464d908
+    // Address: 0x464da08
     public class CanPlaySequence_t
     {
         // Fields (4):
@@ -4757,7 +4770,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nWorldGroupId = 0x14;
     }
 
-    // Address: 0x46af010
+    // Address: 0x46af110
     public class Capsule
     {
         // Fields (5):
@@ -4768,7 +4781,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_mapCursorDesc = 0x50;
     }
 
-    // Address: 0x469f7f0
+    // Address: 0x469f8f0
     public class Catmull-Rom
     {
         // Fields (5):
@@ -4779,7 +4792,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_compressedOffsets = 0x40;
     }
 
-    // Address: 0x469f750
+    // Address: 0x469f850
     public class Catmull-Rom (Norm X)
     {
         // Fields (3):
@@ -4788,7 +4801,7 @@ return libclient_so (0x76ed48800000) {
         public readonly string m_soundeventOverrideID = 0x10;
     }
 
-    // Address: 0x46b55a8
+    // Address: 0x46b56a8
     public class Choose the first outflow with all rules passing, from left to right
     {
         // Fields (10):
@@ -4804,7 +4817,7 @@ return libclient_so (0x76ed48800000) {
         public readonly IntPtr m_paramMap = 0xd0;
     }
 
-    // Address: 0x46645c8
+    // Address: 0x46646c8
     public class ChoreoScriptedMoveTo_t
     {
         // Fields (12):
@@ -4822,7 +4835,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_hOriginalThrower = 0x1234;
     }
 
-    // Address: 0x468d5e0
+    // Address: 0x468d6e0
     public class Client Simulation
     {
         // Fields (31):
@@ -4859,7 +4872,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bInitializedTags = 0x14b0;
     }
 
-    // Address: 0x4686860
+    // Address: 0x4686960
     public class ClientModeCSNormalPostProcessing
     {
         // Fields (7):
@@ -4872,20 +4885,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bSpawnDyingParticles = 0x29e0;
     }
 
-    // Address: 0x4675550
-    public class Client_Animation
-    {
-        // Fields (7):
-        public readonly int m_nNextPrimaryAttackTick = 0x27a8;
-        public readonly float m_flNextPrimaryAttackTickRatio = 0x27ac;
-        public readonly int m_nNextSecondaryAttackTick = 0x27b0;
-        public readonly float m_flNextSecondaryAttackTickRatio = 0x27b4;
-        public readonly int m_iClip1 = 0x27b8;
-        public readonly int m_iClip2 = 0x27bc;
-        public readonly IntPtr m_pReserveAmmo = 0x27c0;
-    }
-
-    // Address: 0x46828c0
+    // Address: 0x46829c0
     public class CloseCaptionPanoramaResources
     {
         // Fields (23):
@@ -4914,7 +4914,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_fNewestAlphaThinkTime = 0x1340;
     }
 
-    // Address: 0x46b2508
+    // Address: 0x46b2608
     public class Code
     {
         // Fields (5):
@@ -4925,7 +4925,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_ReturnValues = 0xb0;
     }
 
-    // Address: 0x4631510
+    // Address: 0x4631610
     public class Collision Wireframe
     {
         // Fields (84):
@@ -5015,7 +5015,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flAmbientOcclusionProxyConeAngle3 = 0x1e0;
     }
 
-    // Address: 0x46b2668
+    // Address: 0x46b2768
     public class Color
     {
         // Fields (3):
@@ -5024,7 +5024,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_OnFinished = 0xf8;
     }
 
-    // Address: 0x46adfe8
+    // Address: 0x46ae0e8
     public class ConstantInfo_t
     {
         // Fields (4):
@@ -5034,7 +5034,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_Param = 0x30;
     }
 
-    // Address: 0x46ae7d0
+    // Address: 0x46ae8d0
     public class Contrast
     {
         // Fields (4):
@@ -5044,7 +5044,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bIsObservable = 0x2c;
     }
 
-    // Address: 0x464f590
+    // Address: 0x464f690
     public class CountdownTimer
     {
         // Fields (3):
@@ -5053,7 +5053,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bClosedLoop = 0x888;
     }
 
-    // Address: 0x46ae8d0
+    // Address: 0x46ae9d0
     public class Curl
     {
         // Fields (5):
@@ -5064,7 +5064,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nLastReadByInstruction = 0x5c;
     }
 
-    // Address: 0x467db00
+    // Address: 0x467dc00
     internal class This value used to determine this weapon's importance in autoselection
     {
         // Fields (3):
@@ -5073,7 +5073,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flLineLength = 0x1028;
     }
 
-    // Address: 0x467da30
+    // Address: 0x467db30
     internal class Which 'row' to display this weapon in the HUD
     {
         // Fields (14):
@@ -5093,7 +5093,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bRestartAfterRestore = 0x124c;
     }
 
-    // Address: 0x4684be0
+    // Address: 0x4684ce0
     internal class c_cs_player_for_precache
     {
         // Fields (7):
@@ -5106,7 +5106,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bIsYesNoVote = 0x7ae;
     }
 
-    // Address: 0x4674c60
+    // Address: 0x4674d60
     internal class cs_player_controller
     {
         // Fields (5):
@@ -5117,7 +5117,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flTotalRoundDamageDealt = 0x128;
     }
 
-    // Address: 0x4674ea0
+    // Address: 0x4674fa0
     internal class cs_player_manager
     {
         // Fields (5):
@@ -5128,7 +5128,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bBlockInspectUntilNextGraphUpdate = 0x15d8;
     }
 
-    // Address: 0x4672ab0
+    // Address: 0x4672bb0
     internal class customplayer
     {
         // Fields (16):
@@ -5150,7 +5150,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flWeaponDropSmoothDampVelocity = 0x3c;
     }
 
-    // Address: 0x46b7530
+    // Address: 0x46b7630
     internal class entity2
     {
         // Fields (8):
@@ -5164,7 +5164,7 @@ return libclient_so (0x76ed48800000) {
         public readonly Vector3 m_vecCompositeMaterials = 0x1f8;
     }
 
-    // Address: 0x46356b0
+    // Address: 0x46357b0
     internal class entityType:to_subtype
     {
         // Fields (20):
@@ -5190,7 +5190,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_Entity_bEnabled = 0x899;
     }
 
-    // Address: 0x46448a0
+    // Address: 0x46449a0
     internal class entityflame
     {
         // Fields (29):
@@ -5225,7 +5225,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_hLastAttacker = 0x1354;
     }
 
-    // Address: 0x467ca08
+    // Address: 0x467cb08
     internal class entitytable_t
     {
         // Fields (7):
@@ -5238,7 +5238,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_SpotRadius = 0x1034;
     }
 
-    // Address: 0x4638360
+    // Address: 0x4638460
     internal class env_cubemap_fog
     {
         // Fields (8):
@@ -5252,7 +5252,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bWorldLayerActuallyVisible = 0x7b0;
     }
 
-    // Address: 0x4685060
+    // Address: 0x4685160
     internal class func_conveyor
     {
         // Fields (16):
@@ -5274,7 +5274,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_SprayRenderHelper = 0x1100;
     }
 
-    // Address: 0x464db88
+    // Address: 0x464dc88
     internal class globalentitydatabase_t
     {
         // Fields (2):
@@ -5282,7 +5282,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_fNextEvent = 0x4;
     }
 
-    // Address: 0x464b1c0
+    // Address: 0x464b2c0
     internal class ground_entity_debug_name
     {
         // Fields (37):
@@ -5325,7 +5325,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bConstrainBetweenEndpoints = 0x1388;
     }
 
-    // Address: 0x4668848
+    // Address: 0x4668948
     internal class last_match_max_players
     {
         // Fields (9):
@@ -5340,7 +5340,7 @@ return libclient_so (0x76ed48800000) {
         public readonly IntPtr m_petItem = 0x45c0;
     }
 
-    // Address: 0x464f100
+    // Address: 0x464f200
     internal class m_FlashlightTexture
     {
         // Fields (5):
@@ -5351,7 +5351,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nDamageType = 0x1378;
     }
 
-    // Address: 0x463d940
+    // Address: 0x463da40
     internal class m_bEligibleForScreenHighlight
     {
         // Fields (22):
@@ -5379,7 +5379,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bInTakeDamageFlow = 0x110;
     }
 
-    // Address: 0x46837a0
+    // Address: 0x46838a0
     internal class m_entitySpottedState
     {
         // Fields (6):
@@ -5391,7 +5391,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flRollScale = 0x7bc;
     }
 
-    // Address: 0x46a6f00
+    // Address: 0x46a7000
     internal class m_triggerMode
     {
         // Fields (3):
@@ -5400,7 +5400,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_comparisionIDs = 0x10;
     }
 
-    // Address: 0x466a680
+    // Address: 0x466a780
     internal class m_weaponItem
     {
         // Fields (11):
@@ -5417,7 +5417,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bSmokeEffectSpawned = 0x1332;
     }
 
-    // Address: 0x4630eb0
+    // Address: 0x4630fb0
     internal class melee_hit_player
     {
         // Fields (31):
@@ -5454,7 +5454,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bIgnoreParentOrientation = 0x1268;
     }
 
-    // Address: 0x46416a8
+    // Address: 0x46417a8
     internal class thinkfunc_t
     {
         // Fields (2):
@@ -5462,7 +5462,7 @@ return libclient_so (0x76ed48800000) {
         public readonly int m_nInitialSeed = 0x9c;
     }
 
-    // Address: 0x4667a68
+    // Address: 0x4667b68
     internal class total_kills_enemy_weapon
     {
         // Fields (98):
@@ -5566,7 +5566,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flLastPerfSampleTime = 0x4f50;
     }
 
-    // Address: 0x464bec0
+    // Address: 0x464bfc0
     internal class trigger_physics
     {
         // Fields (26):
@@ -5598,7 +5598,7 @@ return libclient_so (0x76ed48800000) {
         public readonly float m_flClientLocalScale = 0x12c;
     }
 
-    // Address: 0x466f8c0
+    // Address: 0x466f9c0
     internal class weapon_awp_client
     {
         // Fields (2):
@@ -5606,7 +5606,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bRedraw = 0x2da6;
     }
 
-    // Address: 0x466f5e0
+    // Address: 0x466f6e0
     internal class weapon_galilar
     {
         // Fields (10):
@@ -5622,7 +5622,7 @@ return libclient_so (0x76ed48800000) {
         public readonly bool m_bBombPlanted = 0x2de3;
     }
 
-    // Address: 0x4672420
+    // Address: 0x4672520
     internal class weapon_hegrenade
     {
         // Fields (5):
@@ -5633,7 +5633,7 @@ return libclient_so (0x76ed48800000) {
         public readonly CHandle m_hItem = 0x40;
     }
 
-    // Address: 0x466f040
+    // Address: 0x466f140
     internal class weapon_mp7
     {
         // Fields (2):

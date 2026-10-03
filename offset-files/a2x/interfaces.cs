@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-01 20:14:35.847820660 UTC
+// 2026-10-03 10:27:49.846771084 UTC
 
 namespace CS2Dumper.Interfaces {
     // Module: libanimationsystem.so
@@ -9,8 +9,8 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: libclient.so
     public static class LibclientSo {
-        public const nint  = 0xB7800000;
-        public const nint ()�n�v = 0x45295D0;
+        public const nint  = 0x5CA00000;
+        public const nint ()̿x = 0x45296D0;
     }
     // Module: libengine2.so
     public static class Libengine2So {
