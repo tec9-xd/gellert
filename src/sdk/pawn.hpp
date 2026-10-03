@@ -77,4 +77,33 @@ public:
     bool get_gun_game_immunity() {
         return *(bool*)((uintptr_t)this + off::m_bGunGameImmunity);
     }
+
+    Vec3 get_v_angle() {
+        return *(Vec3*)((uintptr_t)this + off::v_angle);
+    }
+
+    void set_button(uint64_t mask, bool down) {
+        void* ms = movement_services();
+        if (!valid_ptr(ms)) return;
+
+        auto* nValue   = (uint64_t*)((uintptr_t)ms + off::m_nButtons + 0x8);
+        auto* nChanged = (uint64_t*)((uintptr_t)ms + off::m_nButtons + 0x10);
+        auto* queued   = (uint64_t*)((uintptr_t)ms + off::m_nQueuedButtonDownMask);
+        auto* qchange  = (uint64_t*)((uintptr_t)ms + off::m_nQueuedButtonChangeMask);
+
+        if (valid_ptr(nValue) && valid_ptr(nChanged)) {
+            uint64_t prev = *nValue;
+            if (down) *nValue |=  mask;
+            else      *nValue &= ~mask;
+            *nChanged |= (prev ^ *nValue);
+        }
+        if (valid_ptr(queued) && valid_ptr(qchange)) {
+            if (down) {
+                *queued  |= mask;
+                *qchange |= mask;
+            } else {
+                *queued  &= ~mask;
+            }
+        }
+    }
 };

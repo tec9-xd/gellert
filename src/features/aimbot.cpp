@@ -6,8 +6,11 @@
 #include "../sdk/input.hpp"
 #include "../sdk/entity_system.hpp"
 #include "../sdk/pawn.hpp"
+#include "../hooks/hooks.hpp"
 #include "dearimgui.hpp"
 #include <cmath>
+
+static bool g_aim_firing = false;
 
 static Vec3 aim_point(Pawn* pawn) {
     Vec3 origin = pawn->get_abs_origin();
@@ -19,16 +22,40 @@ static Vec3 aim_point(Pawn* pawn) {
     return Vec3{origin.x, origin.y, origin.z + 72.f};
 }
 
+static void fire(Pawn* localpawn, bool down) {
+    if (valid_ptr(localpawn))
+        localpawn->set_button(IN_ATTACK, down);
+    if (down != g_aim_firing) {
+        aim_inject_lmb(down);
+        g_aim_firing = down;
+    } else if (down) {
+        localpawn->set_button(IN_ATTACK, true);
+    }
+}
+
 struct AimbotFeature final : IFeature {
     const char* name() const override { return "Aimbot"; }
     const char* tab()  const override { return "Aimbot"; }
 
-    void on_create_move() override {
-        if (!config.aimbot.master || menu_focused) return;
+    // PRE, sonst setzt Original-CreateMove Attack aus dem echten Mauszustand zurück.
+    void on_create_move_pre() override {
+        if (!config.aimbot.master || menu_focused) {
+            if (g_aim_firing) {
+                Pawn* p = (entity_system && valid_ptr(entity_system))
+                    ? entity_system->get_localpawn() : nullptr;
+                fire(p, false);
+            }
+            target_pawn = nullptr;
+            return;
+        }
         if (!entity_system || !valid_ptr(entity_system) || !input) return;
 
         bool key = is_down(config.aimbot.key);
         if (!key && !config.aimbot.auto_shoot) {
+            if (g_aim_firing) {
+                Pawn* p = entity_system->get_localpawn();
+                fire(p, false);
+            }
             target_pawn = nullptr;
             return;
         }
@@ -41,15 +68,21 @@ struct AimbotFeature final : IFeature {
         int local_team = (int)localpawn->get_cs_team();
         if (local_team != 2 && local_team != 3) return;
 
-        Vec3 original_view_angles = input->get_view_angles();
+        Vec3 va_match = localpawn->get_v_angle();
+        if (Input::view_angle_off < 0)
+            Input::view_angle_off = Input::detect_va_off(input, va_match);
+
+        Vec3 original_view_angles = input->get_view_angles(va_match);
         Vec3 eye = localpawn->get_eye_position();
         if (eye.x == 0.f && eye.y == 0.f && eye.z == 0.f)
             eye = localpawn->get_abs_origin();
 
         static bool once = false;
         if (!once) {
-            print("aimbot live  va_off=0x%x  va=%.1f %.1f  team=%d\n",
-                  Input::view_angle_off, original_view_angles.x, original_view_angles.y, local_team);
+            print("aimbot live  va_off=0x%x  va=%.1f %.1f  pawn_va=%.1f %.1f  team=%d\n",
+                  Input::view_angle_off,
+                  original_view_angles.x, original_view_angles.y,
+                  va_match.x, va_match.y, local_team);
             once = true;
         }
 
@@ -78,12 +111,6 @@ struct AimbotFeature final : IFeature {
             float yaw   = atan2f(diff.y, diff.x) * radpi;
             Vec3 desired{-pitch, yaw, 0.f};
 
-            if (config.aimbot.recoil) {
-                Vec3 punch = localpawn->get_aim_punch();
-                desired.x -= punch.x;
-                desired.y -= punch.y;
-            }
-
             float x = remainderf(desired.x - original_view_angles.x, 360.f);
             float y = remainderf(desired.y - original_view_angles.y, 360.f);
             if (x > 89.f) x = 89.f; else if (x < -89.f) x = -89.f;
@@ -96,7 +123,10 @@ struct AimbotFeature final : IFeature {
         }
 
         target_pawn = best;
-        if (!best) return;
+        if (!best) {
+            fire(localpawn, false);
+            return;
+        }
 
         float smooth = config.aimbot.smooth;
         if (smooth < 1.f) smooth = 1.f;
@@ -109,9 +139,12 @@ struct AimbotFeature final : IFeature {
         else if (final_ang.x < -89.f) final_ang.x = -89.f;
         final_ang.y = remainderf(final_ang.y, 360.f);
 
-        input->set_view_angles(final_ang);
+        input->set_view_angles(final_ang, va_match);
+
         if (config.aimbot.auto_shoot)
-            input->set_shoot(true);
+            fire(localpawn, true);
+        else if (g_aim_firing)
+            fire(localpawn, false);
     }
 
     void on_draw() override {
@@ -135,6 +168,7 @@ struct AimbotFeature final : IFeature {
         ImGui::Checkbox("Draw FOV", &config.aimbot.draw_fov);
         ImGui::Checkbox("Recoil Compensation", &config.aimbot.recoil);
         ImGui::Checkbox("Auto Shoot", &config.aimbot.auto_shoot);
+        ImGui::Text("va_off=0x%x  firing=%s", Input::view_angle_off, g_aim_firing ? "YES" : "no");
     }
 };
 REGISTER_FEATURE(AimbotFeature);

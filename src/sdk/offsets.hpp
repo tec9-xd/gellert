@@ -2,14 +2,14 @@
 #include <cstddef>
 #include <cstdint>
 
-// schema: offset-files/libclient_dump.cs + offset-files/a2x/libclient.so.hpp  (2026-10-01)
-// globals: offset-files/a2x/offsets.hpp  (linux libclient.so, 2026-10-01)
+// schema: offset-files/libclient_dump.cs + offset-files/a2x/libclient.so.hpp  (2026-10-03)
+// globals: offset-files/a2x/offsets.hpp  (linux libclient.so, 2026-10-03)
 namespace off {
-    constexpr std::ptrdiff_t dwViewMatrix            = 0x493FD80;
-    constexpr std::ptrdiff_t dwLocalPlayerController = 0x4900698;
-    constexpr std::ptrdiff_t dwLocalPlayerPawn       = 0x4938758;
-    constexpr std::ptrdiff_t dwGameEntitySystem      = 0x4B8D7D0;
-    constexpr std::ptrdiff_t dwEntityList            = 0x46BB280;
+    constexpr std::ptrdiff_t dwViewMatrix            = 0x493FE80;
+    constexpr std::ptrdiff_t dwLocalPlayerController = 0x4900798;
+    constexpr std::ptrdiff_t dwLocalPlayerPawn       = 0x4938858;
+    constexpr std::ptrdiff_t dwGameEntitySystem      = 0x4B8D8D0;
+    constexpr std::ptrdiff_t dwEntityList            = 0x46BB380;
 
     constexpr std::ptrdiff_t m_aimPunchAngle = 0x16CC; // stale; punch is CCSPlayer_AimPunchServices now
 
@@ -48,9 +48,14 @@ namespace off {
     constexpr std::ptrdiff_t m_bGunGameImmunity      = 0x43A8;
 
     constexpr std::ptrdiff_t input_thirdperson       = 0x261;
-    constexpr std::ptrdiff_t input_shoot             = 0x288;
+    constexpr std::ptrdiff_t input_shoot             = 0x288; // tot, nicht mehr nutzen
     constexpr std::ptrdiff_t jump                    = 0;
+
+    constexpr std::ptrdiff_t v_angle              = 0x1330; // C_BasePlayerPawn
+    constexpr std::ptrdiff_t m_pAimPunchServices  = 0x1520; // C_CSPlayerPawn
+    constexpr std::ptrdiff_t m_predictableBaseAngle = 0x50;  // CCSPlayer_AimPunchServices
 }
 
+constexpr uint64_t IN_ATTACK   = 1ull << 0;
 constexpr uint64_t IN_JUMP     = 1ull << 1;
 constexpr uint32_t FL_ONGROUND = 1u << 0;

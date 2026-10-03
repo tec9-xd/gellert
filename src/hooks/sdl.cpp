@@ -77,6 +77,20 @@ void bhop_inject_space(bool down) {
     peep_events_original(&e, 1, SDL_ADDEVENT, 0, 0);
 }
 
+void aim_inject_lmb(bool down) {
+    if (!peep_events_original) return;
+    SDL_Event e{};
+    e.type = down ? SDL_EVENT_MOUSE_BUTTON_DOWN : SDL_EVENT_MOUSE_BUTTON_UP;
+    e.button.type = (SDL_EventType)e.type;
+    e.button.button = SDL_BUTTON_LEFT;
+    e.button.down = down;
+    e.button.clicks = 1;
+    e.button.timestamp = SDL_GetTicksNS();
+    if (sdl_window)
+        e.button.windowID = SDL_GetWindowID(sdl_window);
+    peep_events_original(&e, 1, SDL_ADDEVENT, 0, 0);
+}
+
 int peep_events_hook(SDL_Event* events, int numevents, SDL_EventAction action, int min, int max) {
     int ret = peep_events_original(events, numevents, action, min, max);
 

@@ -62,3 +62,5 @@ void allow_camera_angle_change_hook(void* me, int n);
 
 bool hook_input_vmt(void* input_ptr);
 void unhook_input_vmt();
+
+void aim_inject_lmb(bool down);
