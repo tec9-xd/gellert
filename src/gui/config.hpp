@@ -29,6 +29,17 @@ struct Config {
     } aimbot;
 
     struct {
+        bool  master       = false;
+        int   min_damage   = 70;
+        bool  auto_shoot   = true;
+        bool  autowall     = true;
+        bool  draw_aim     = true;
+        bool  restore_view = true;
+        float fov          = 180.f;
+        float max_dist     = 8192.f;
+    } ragebot;
+
+    struct {
         bool master = false;
         bool skip_team = true;
         struct {
@@ -67,7 +78,7 @@ struct Config {
         bool bhop = false;
     } movement;
 
-        struct {
+    struct {
         bool debug = false;
         bool input_passthrough = false;
     } misc;

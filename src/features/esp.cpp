@@ -177,6 +177,7 @@ struct EspFeature final : IFeature {
     }
 
     void on_menu() override {
+        ImGui::PushID("esp");
         ImGui::Checkbox("ESP master", &config.esp.master);
         ImGui::Checkbox("Skip teammates", &config.esp.skip_team);
         ImGui::Separator();
@@ -208,6 +209,9 @@ struct EspFeature final : IFeature {
                         g_dbg_vm00, g_dbg_vm11, g_dbg_dsx, g_dbg_dsy);
             ImGui::TextWrapped("ctrl=0 entity list/GRS | pawn=0 handle | w2s=0 viewmatrix | drawn=0 filters");
         }
+        ImGui::PopID();
     }
 };
 REGISTER_FEATURE(EspFeature);
+
+extern "C" void* esp_keep() { return (void*)&_inst_EspFeature; }

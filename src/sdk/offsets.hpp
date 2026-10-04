@@ -54,6 +54,24 @@ namespace off {
     constexpr std::ptrdiff_t v_angle              = 0x1330; // C_BasePlayerPawn
     constexpr std::ptrdiff_t m_pAimPunchServices  = 0x1520; // C_CSPlayerPawn
     constexpr std::ptrdiff_t m_predictableBaseAngle = 0x50;  // CCSPlayer_AimPunchServices
+
+    // weapon / armor (a2x libclient.so.hpp, same dump as the rest)
+    constexpr std::ptrdiff_t m_pWeaponServices = 0x1278; // C_BasePlayerPawn
+    constexpr std::ptrdiff_t m_pItemServices   = 0x1280; // C_BasePlayerPawn
+    constexpr std::ptrdiff_t m_ArmorValue      = 0x2D5C; // C_CSPlayerPawn
+    constexpr std::ptrdiff_t ws_hActiveWeapon  = 0x60;   // CPlayer_WeaponServices::m_hActiveWeapon
+    constexpr std::ptrdiff_t is_bHasHelmet     = 0x49;   // CCSPlayer_ItemServices::m_bHasHelmet
+    constexpr std::ptrdiff_t m_nSubclassID     = 0x4F0;  // C_BaseEntity  (VData ptr at +8)
+    constexpr std::ptrdiff_t m_iClip1          = 0x27B8; // C_BasePlayerWeapon
+    constexpr std::ptrdiff_t m_nNextPrimaryAttackTick = 0x27A8;
+
+    constexpr std::ptrdiff_t vd_WeaponType           = 0x520; // CCSWeaponBaseVData
+    constexpr std::ptrdiff_t vd_nDamage              = 0x820;
+    constexpr std::ptrdiff_t vd_flHeadshotMultiplier = 0x824;
+    constexpr std::ptrdiff_t vd_flArmorRatio         = 0x828;
+    constexpr std::ptrdiff_t vd_flPenetration        = 0x82C;
+    constexpr std::ptrdiff_t vd_flRange              = 0x830;
+    constexpr std::ptrdiff_t vd_flRangeModifier      = 0x834;
 }
 
 constexpr uint64_t IN_ATTACK   = 1ull << 0;

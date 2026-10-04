@@ -27,6 +27,9 @@ public:
     void* camera_services() {
         return *(void**)((uintptr_t)this + off::m_pCameraServices);
     }
+    void* weapon_services() {
+        return *(void**)((uintptr_t)this + off::m_pWeaponServices);
+    }
     Vec3 get_abs_origin() {
         void* n = scene_node();
         if (valid_ptr(n)) {
@@ -67,6 +70,14 @@ public:
     }
     int get_health() {
         return *(int*)((uintptr_t)this + off::m_iHealth);
+    }
+    int get_armor() {
+        return *(int*)((uintptr_t)this + off::m_ArmorValue);
+    }
+    bool has_helmet() {
+        void* is = *(void**)((uintptr_t)this + off::m_pItemServices);
+        if (!valid_ptr(is)) return false;
+        return *(bool*)((uintptr_t)is + off::is_bHasHelmet);
     }
     uint32_t get_flags() {
         return *(uint32_t*)((uintptr_t)this + off::m_fFlags);

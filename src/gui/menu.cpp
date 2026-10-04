@@ -37,7 +37,7 @@ void draw_menu() {
 
     ImGuiStyle* style = &ImGui::GetStyle();
 
-    static const char* tabs[] = { "Aimbot", "ESP", "Movement", "Visuals", "Sounds", "Misc" };
+    static const char* tabs[] = { "Aimbot", "RageBot", "ESP", "Movement", "Visuals", "Sounds", "Misc" };
     constexpr int tab_count = (int)(sizeof(tabs) / sizeof(tabs[0]));
 
     static int tab = 0;

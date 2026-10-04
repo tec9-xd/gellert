@@ -45,7 +45,6 @@ static bool bone_ok(const Vec3& b, const Vec3& origin) {
     return d2 > 1.f && d2 < 200.f * 200.f;
 }
 
-// same head ESP uses (origin+72), bone 6 only if it actually sits on the neck
 static Vec3 aim_point(Pawn* pawn) {
     Vec3 origin = pawn->get_abs_origin();
     Vec3 bone = pawn->get_bone_location((unsigned)Bone::head);
@@ -74,7 +73,6 @@ static Vec3 calc_angle(const Vec3& src, const Vec3& dst) {
     return a;
 }
 
-// identical filters to ESP (no immunity, no CreateMove-only checks)
 static bool esp_targetable(Pawn* pawn, Pawn* localpawn, int local_team, bool have_local) {
     if (!valid_ptr(pawn) || pawn == localpawn) return false;
     if (pawn->get_lifestate() || pawn->is_dormant()) return false;
@@ -108,6 +106,11 @@ static void commit(Pawn* local, const Vec3& ang) {
 }
 
 static void snap_to_sticky() {
+    if (config.ragebot.master) {
+        g_sticky = nullptr;
+        g_last_ang_ok = false;
+        return;
+    }
     if (!config.aimbot.master || menu_focused) {
         g_sticky = nullptr;
         g_last_ang_ok = false;
@@ -133,7 +136,6 @@ static void snap_to_sticky() {
         return;
     }
 
-    // dead / lost — freeze last snap, do NOT restore mouse
     g_sticky = nullptr;
     target_pawn = nullptr;
     if (g_last_ang_ok)
@@ -148,6 +150,12 @@ struct AimbotFeature final : IFeature {
     void on_create_move()     override { snap_to_sticky(); }
 
     void on_draw() override {
+        if (config.ragebot.master) {
+            g_sticky = nullptr;
+            g_last_ang_ok = false;
+            return;
+        }
+
         g_bind = bind_down();
         g_dbg_esp = g_dbg_fov = 0;
         g_dbg_px = -1.f;
@@ -182,7 +190,6 @@ struct AimbotFeature final : IFeature {
         float best_d = 1.e9f;
         Vec3  best_head{};
 
-        // EXACT ESP walk: controllers 1..64, same handle/hp/team/dormant/origin filters
         for (unsigned i = 1; i <= 64; ++i) {
             Entity* entity = entity_system->entity_from_index(i);
             if (!valid_ptr(entity) || entity == localentity) continue;
@@ -212,6 +219,7 @@ struct AimbotFeature final : IFeature {
                 best_head = aim_point(pawn);
             }
         }
+        (void)best_head;
 
         bool want = g_bind || config.aimbot.auto_shoot;
         if (!want || menu_focused) {
@@ -229,7 +237,6 @@ struct AimbotFeature final : IFeature {
         if (g_sticky) {
             g_dbg_px = best_d;
             const char* nm = nullptr;
-            // name lives on the controller, not the pawn — scan back for display only
             for (unsigned i = 1; i <= 64; ++i) {
                 Entity* e = entity_system->entity_from_index(i);
                 if (!valid_ptr(e)) continue;
@@ -265,7 +272,8 @@ struct AimbotFeature final : IFeature {
     }
 
     void on_menu() override {
-        ImGui::Checkbox("Master", &config.aimbot.master);
+        ImGui::PushID("aimbot");
+        ImGui::Checkbox("Aimbot master", &config.aimbot.master);
         ImGui::Text("Key");
         ImGui::SameLine();
         ImGui::KeybindBox(&config.aimbot.key.waiting, &config.aimbot.key.button);
@@ -279,9 +287,8 @@ struct AimbotFeature final : IFeature {
                     g_bind ? "DOWN" : "up", g_dbg_esp, g_dbg_fov);
         ImGui::Text("lock: %s   cm ticks: %u   va_off: 0x%x",
                     g_dbg_name, g_cm_ticks, input ? (unsigned)Input::view_angle_off : 0u);
-        ImGui::TextWrapped("FOV 180 = anyone ESP can see. Cyan line under ESP debug: "
-                           "bind must say DOWN when you hold the key. in_fov must be >0 "
-                           "when someone is in the circle. Magenta dot = locked head.");
+        ImGui::TextWrapped("FOV 180 = anyone ESP can see. Turn this OFF while RageBot is on.");
+        ImGui::PopID();
     }
 };
 REGISTER_FEATURE(AimbotFeature);
